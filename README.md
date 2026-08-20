@@ -142,3 +142,10 @@ python3 scripts/build_dashboard.py
 The build replaces the `/*__SALES_DATA__*/ null` placeholder in the template with
 the CSV encoded as compact JSON. The template on its own still opens in a
 browser — it just starts empty and waits for **Load CSV…**.
+
+To embed the dashboard in a page that already has its own `<html>` shell (a CMS,
+a docs site, a hosted snippet), ask the build for a body-only copy:
+
+```bash
+python3 scripts/build_dashboard.py --fragment build/dashboard-fragment.html
+```

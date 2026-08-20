@@ -1182,17 +1182,24 @@ document.querySelectorAll(".tbl-toggle").forEach((btn) => {
 });
 
 const themeBtn = document.getElementById("theme-toggle");
-function applyTheme(mode) {
-  document.documentElement.setAttribute("data-theme", mode);
+const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+function effectiveTheme() {
+  // an existing stamp wins - the page may be embedded somewhere that sets it
+  const stamped = document.documentElement.getAttribute("data-theme");
+  if (stamped === "dark" || stamped === "light") return stamped;
+  return darkQuery.matches ? "dark" : "light";
+}
+function syncThemeButton() {
+  const mode = effectiveTheme();
   themeBtn.textContent = mode === "dark" ? "Light" : "Dark";
   themeBtn.setAttribute("aria-pressed", String(mode === "dark"));
 }
 themeBtn.addEventListener("click", () => {
-  const current = document.documentElement.getAttribute("data-theme")
-    || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-  applyTheme(current === "dark" ? "light" : "dark");
+  document.documentElement.setAttribute("data-theme", effectiveTheme() === "dark" ? "light" : "dark");
+  syncThemeButton();
 });
-applyTheme(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+darkQuery.addEventListener("change", syncThemeButton);   // no stamp yet: follow the OS
+syncThemeButton();
 
 document.getElementById("csv-input").addEventListener("change", (e) => {
   const file = e.target.files && e.target.files[0];

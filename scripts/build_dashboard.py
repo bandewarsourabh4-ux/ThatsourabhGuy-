@@ -70,11 +70,32 @@ def encode(csv_path: Path) -> dict:
     return {"countries": countries, "products": products, "segments": segments, "rows": rows}
 
 
+def to_fragment(html: str) -> str:
+    """Strip the document wrapper, keeping <title>, <style> and the body content."""
+    def grab(pattern: str) -> str:
+        match = re.search(pattern, html, re.S | re.I)
+        if not match:
+            raise SystemExit(f"could not find {pattern} while building the fragment")
+        return match.group(1).strip()
+
+    title = grab(r"<title>(.*?)</title>")
+    style = grab(r"(<style>.*?</style>)")
+    body = grab(r"<body[^>]*>(.*?)</body>")
+    return f"<title>{title}</title>\n{style}\n{body}\n"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--csv", default=str(ROOT / "data" / "sales_data.csv"))
     parser.add_argument("--template", default=str(ROOT / "dashboard" / "template.html"))
     parser.add_argument("--out", default=str(ROOT / "dashboard" / "index.html"))
+    parser.add_argument(
+        "--fragment",
+        metavar="PATH",
+        help="also write a body-only copy (title + styles + content, no "
+             "doctype/html/head/body wrapper) for hosts that supply their own "
+             "document shell",
+    )
     args = parser.parse_args()
 
     payload = encode(Path(args.csv))
@@ -89,6 +110,12 @@ def main() -> None:
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html, encoding="utf-8")
+
+    if args.fragment:
+        fragment_path = Path(args.fragment)
+        fragment_path.parent.mkdir(parents=True, exist_ok=True)
+        fragment_path.write_text(to_fragment(html), encoding="utf-8")
+        print(f"built {fragment_path} ({fragment_path.stat().st_size / 1024:.0f} KB, body-only)")
 
     total_sales = sum(r[5] for r in payload["rows"])
     print(f"built {out_path} ({out_path.stat().st_size / 1024:.0f} KB)")

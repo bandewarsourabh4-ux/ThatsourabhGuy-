@@ -1,0 +1,67 @@
+// ---------------------------------------------------------------------------
+// Sales Analysis — DAX measures
+// Paste each measure into Power BI Desktop (Home -> New measure), ideally into
+// a dedicated "_Measures" table. Table name assumed: sales_data.
+// ---------------------------------------------------------------------------
+
+// --- Core measures (the two cards and the chart values) --------------------
+
+Total Sales = SUM ( sales_data[Sales] )
+
+Total Profit = SUM ( sales_data[Profit] )
+
+Total Units = SUM ( sales_data[Units] )
+
+Transactions = COUNTROWS ( sales_data )
+
+Profit Margin = DIVIDE ( [Total Profit], [Total Sales] )
+
+Average Order Value = DIVIDE ( [Total Sales], [Transactions] )
+
+
+// --- Share-of-total (pie tooltips, column chart labels) --------------------
+
+Sales % of Total =
+DIVIDE (
+    [Total Sales],
+    CALCULATE ( [Total Sales], REMOVEFILTERS ( sales_data[Segment], sales_data[Country], sales_data[Product] ) )
+)
+
+
+// --- Time intelligence (requires the marked date table from the guide) -----
+
+Sales LY =
+CALCULATE ( [Total Sales], SAMEPERIODLASTYEAR ( 'Date Table'[Date] ) )
+
+Sales YoY % =
+DIVIDE ( [Total Sales] - [Sales LY], [Sales LY] )
+
+Sales YTD =
+TOTALYTD ( [Total Sales], 'Date Table'[Date] )
+
+Sales MoM % =
+VAR PrevMonth =
+    CALCULATE ( [Total Sales], DATEADD ( 'Date Table'[Date], -1, MONTH ) )
+RETURN
+    DIVIDE ( [Total Sales] - PrevMonth, PrevMonth )
+
+Sales 3M Rolling Average =
+AVERAGEX (
+    DATESINPERIOD ( 'Date Table'[Date], MAX ( 'Date Table'[Date] ), -3, MONTH ),
+    [Total Sales]
+)
+
+
+// --- Ranking helpers (top country / top product cards) ---------------------
+
+Top Country by Sales =
+VAR Ranked =
+    TOPN ( 1, VALUES ( sales_data[Country] ), [Total Sales], DESC )
+RETURN
+    CONCATENATEX ( Ranked, sales_data[Country], ", " )
+
+Top Product by Sales =
+VAR Ranked =
+    TOPN ( 1, VALUES ( sales_data[Product] ), [Total Sales], DESC )
+RETURN
+    CONCATENATEX ( Ranked, sales_data[Product], ", " )

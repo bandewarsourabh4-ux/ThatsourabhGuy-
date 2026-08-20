@@ -1,0 +1,1489 @@
+Date,Country,Product,Segment,Units,Sales,Profit
+2024-01-01,United States,Velo,Channel Partners,92,3560.40,401.74
+2024-01-02,France,Amarilla,Government,51,5992.50,2106.03
+2024-01-03,United States,Paseo,Enterprise,199,5731.20,1555.93
+2024-01-04,France,Velo,Small Business,54,2381.40,571.46
+2024-01-04,India,Paseo,Small Business,72,2257.92,660.47
+2024-01-05,France,Paseo,Midmarket,68,2088.96,691.02
+2024-01-05,United Kingdom,Paseo,Channel Partners,56,1541.12,361.54
+2024-01-06,France,Carretera,Midmarket,117,2021.76,544.54
+2024-01-06,United States,Paseo,Midmarket,119,3655.68,1137.58
+2024-01-07,France,Amarilla,Small Business,40,4900.00,2314.30
+2024-01-07,France,VTT,Enterprise,94,6598.80,1938.78
+2024-01-07,Germany,Velo,Small Business,55,2425.50,671.59
+2024-01-07,United Kingdom,Montana,Small Business,85,1999.20,530.76
+2024-01-08,Canada,VTT,Channel Partners,40,2683.20,840.49
+2024-01-08,France,Paseo,Channel Partners,91,2504.32,557.36
+2024-01-08,United States,Amarilla,Midmarket,61,7320.00,2818.13
+2024-01-09,France,Velo,Government,157,6641.10,1251.97
+2024-01-09,Germany,Paseo,Small Business,65,2038.40,797.51
+2024-01-09,India,Paseo,Enterprise,96,2764.80,694.96
+2024-01-12,India,Amarilla,Midmarket,24,2880.00,1089.25
+2024-01-12,United States,Paseo,Channel Partners,128,3522.56,838.81
+2024-01-13,India,Amarilla,Small Business,19,2327.50,1056.56
+2024-01-13,India,Carretera,Channel Partners,80,1238.40,229.79
+2024-01-13,India,VTT,Channel Partners,37,2481.96,772.64
+2024-01-14,India,Carretera,Government,143,2419.56,695.51
+2024-01-14,India,Paseo,Midmarket,44,1351.68,463.38
+2024-01-15,France,Paseo,Enterprise,99,2851.20,796.78
+2024-01-16,Canada,Montana,Channel Partners,87,1795.68,368.13
+2024-01-16,Canada,Paseo,Government,133,4000.64,1009.79
+2024-01-16,France,Amarilla,Midmarket,33,3960.00,1667.76
+2024-01-16,Germany,Paseo,Channel Partners,67,1843.84,576.99
+2024-01-16,United Kingdom,VTT,Government,131,9604.92,4076.25
+2024-01-17,Germany,Montana,Small Business,93,2187.36,501.45
+2024-01-17,India,Velo,Channel Partners,60,2322.00,324.48
+2024-01-18,Germany,VTT,Government,70,5132.40,1882.76
+2024-01-19,France,Amarilla,Enterprise,52,5850.00,1695.78
+2024-01-19,India,Amarilla,Government,59,6932.50,2126.22
+2024-01-20,India,Montana,Enterprise,114,2462.40,583.70
+2024-01-21,France,Amarilla,Channel Partners,45,4837.50,1863.02
+2024-01-22,Canada,VTT,Midmarket,44,3294.72,1267.52
+2024-01-22,Canada,Velo,Small Business,46,2028.60,427.53
+2024-01-22,United Kingdom,Velo,Government,118,4991.40,818.29
+2024-01-23,Germany,VTT,Enterprise,106,7441.20,2414.89
+2024-01-23,United Kingdom,Paseo,Small Business,83,2602.88,883.60
+2024-01-23,United States,Paseo,Government,229,6888.32,2365.66
+2024-01-24,Germany,Velo,Enterprise,154,6237.00,789.50
+2024-01-24,India,VTT,Midmarket,50,3744.00,1116.66
+2024-01-25,Germany,Amarilla,Midmarket,43,5160.00,1791.22
+2024-01-26,Canada,Velo,Midmarket,87,3758.40,852.59
+2024-01-26,France,Montana,Midmarket,87,2004.48,379.53
+2024-01-26,United Kingdom,Carretera,Channel Partners,85,1315.80,255.32
+2024-01-26,United States,Velo,Government,121,5118.30,822.97
+2024-01-27,India,Velo,Government,107,4526.10,824.20
+2024-01-28,India,Velo,Enterprise,98,3969.00,577.52
+2024-01-28,United States,Montana,Enterprise,273,5896.80,1289.63
+2024-01-29,France,Paseo,Small Business,61,1912.96,606.16
+2024-01-29,United Kingdom,Amarilla,Government,103,12102.50,4088.32
+2024-01-29,United Kingdom,Velo,Small Business,77,3395.70,662.91
+2024-01-29,United States,Carretera,Enterprise,215,3483.00,645.95
+2024-01-30,United Kingdom,VTT,Small Business,42,3210.48,1259.13
+2024-01-31,India,Velo,Small Business,55,2425.50,422.39
+2024-01-31,United States,Velo,Midmarket,133,5745.60,984.59
+2024-02-01,India,Carretera,Channel Partners,69,1068.12,258.18
+2024-02-01,United Kingdom,Velo,Enterprise,146,5913.00,762.26
+2024-02-01,United States,Paseo,Small Business,105,3292.80,1060.16
+2024-02-01,United States,Velo,Government,228,9644.40,1370.87
+2024-02-02,Canada,Carretera,Enterprise,195,3159.00,827.83
+2024-02-02,France,Carretera,Government,162,2741.04,775.45
+2024-02-02,Germany,Montana,Small Business,77,1811.04,389.47
+2024-02-04,France,Velo,Government,110,4653.00,591.65
+2024-02-05,France,Amarilla,Channel Partners,29,3117.50,997.75
+2024-02-06,France,Montana,Channel Partners,77,1589.28,200.78
+2024-02-06,India,Velo,Small Business,62,2734.20,396.67
+2024-02-07,India,Paseo,Enterprise,87,2505.60,666.16
+2024-02-09,Germany,Amarilla,Government,38,4465.00,1901.98
+2024-02-09,United States,Velo,Small Business,78,3439.80,570.97
+2024-02-10,France,VTT,Midmarket,56,4193.28,1466.88
+2024-02-10,India,Carretera,Government,183,3096.36,908.08
+2024-02-10,United Kingdom,Paseo,Government,151,4542.08,1361.14
+2024-02-11,United Kingdom,Carretera,Channel Partners,125,1935.00,379.05
+2024-02-12,India,Amarilla,Enterprise,61,6862.50,2353.86
+2024-02-12,United States,VTT,Channel Partners,107,7177.56,2587.42
+2024-02-13,Canada,VTT,Government,107,7845.24,2666.77
+2024-02-13,Canada,Velo,Midmarket,78,3369.60,660.22
+2024-02-13,United States,Paseo,Midmarket,134,4116.48,1161.10
+2024-02-14,United Kingdom,VTT,Government,158,11584.56,4062.58
+2024-02-15,Canada,VTT,Small Business,49,3745.56,1356.51
+2024-02-15,France,Paseo,Midmarket,99,3041.28,849.15
+2024-02-15,United States,Montana,Enterprise,248,5356.80,1269.46
+2024-02-16,Canada,Paseo,Enterprise,133,3830.40,1110.13
+2024-02-16,India,VTT,Channel Partners,59,3957.72,1145.08
+2024-02-16,United States,Carretera,Channel Partners,131,2027.88,510.46
+2024-02-17,Canada,Carretera,Government,165,2791.80,732.45
+2024-02-17,United Kingdom,Montana,Enterprise,120,2592.00,584.39
+2024-02-17,United States,Paseo,Channel Partners,123,3384.96,894.90
+2024-02-18,Germany,Paseo,Channel Partners,61,1678.72,505.64
+2024-02-18,India,Velo,Government,60,2538.00,426.30
+2024-02-20,India,Carretera,Small Business,98,1728.72,498.63
+2024-02-20,United Kingdom,Velo,Government,147,6218.10,1070.41
+2024-02-23,Canada,VTT,Enterprise,112,7862.40,2614.66
+2024-02-23,India,Paseo,Government,127,3820.16,1109.07
+2024-02-23,United Kingdom,Amarilla,Small Business,58,7105.00,2567.51
+2024-02-23,United Kingdom,VTT,Midmarket,64,4792.32,1876.81
+2024-02-24,Germany,Montana,Enterprise,188,4060.80,857.30
+2024-02-24,India,Velo,Channel Partners,46,1780.20,408.17
+2024-02-24,United Kingdom,Amarilla,Enterprise,59,6637.50,2217.81
+2024-02-24,United Kingdom,Montana,Government,207,4669.92,979.50
+2024-02-24,United States,Paseo,Enterprise,262,7545.60,2316.95
+2024-02-24,United States,Velo,Midmarket,106,4579.20,871.98
+2024-02-25,France,Velo,Channel Partners,57,2205.90,327.85
+2024-02-25,Germany,Amarilla,Channel Partners,48,5160.00,1820.13
+2024-02-25,Germany,Carretera,Government,257,4348.44,1276.75
+2024-02-25,Germany,Paseo,Government,120,3609.60,1064.08
+2024-02-25,United Kingdom,Amarilla,Midmarket,60,7200.00,2903.76
+2024-02-26,France,Velo,Small Business,68,2998.80,924.43
+2024-02-26,India,Montana,Government,119,2684.64,522.51
+2024-02-26,United Kingdom,Paseo,Small Business,88,2759.68,769.11
+2024-02-27,Canada,Carretera,Small Business,98,1728.72,567.69
+2024-02-27,Canada,Paseo,Midmarket,90,2764.80,799.26
+2024-02-28,France,VTT,Small Business,54,4127.76,1459.15
+2024-02-28,United Kingdom,Velo,Channel Partners,55,2128.50,420.23
+2024-02-28,United States,Amarilla,Enterprise,109,12262.50,4379.00
+2024-02-28,United States,Carretera,Midmarket,191,3300.48,720.12
+2024-02-29,France,VTT,Channel Partners,53,3555.24,1033.13
+2024-03-01,India,Paseo,Small Business,68,2132.48,723.87
+2024-03-03,France,VTT,Enterprise,87,6107.40,2095.46
+2024-03-04,Canada,Amarilla,Enterprise,107,12037.50,4558.90
+2024-03-04,Canada,Carretera,Channel Partners,93,1439.64,283.94
+2024-03-04,India,Montana,Channel Partners,92,1898.88,451.93
+2024-03-04,India,Velo,Small Business,53,2337.30,474.74
+2024-03-04,United Kingdom,Velo,Small Business,90,3969.00,892.19
+2024-03-04,United States,Carretera,Channel Partners,142,2198.16,553.96
+2024-03-05,United States,Paseo,Small Business,154,4829.44,1511.36
+2024-03-06,Germany,Amarilla,Midmarket,70,8400.00,2786.54
+2024-03-09,Canada,Velo,Small Business,38,1675.80,315.71
+2024-03-09,Germany,Carretera,Midmarket,128,2211.84,706.71
+2024-03-09,United States,Carretera,Midmarket,222,3836.16,1081.25
+2024-03-10,France,Velo,Midmarket,113,4881.60,1018.02
+2024-03-10,India,Paseo,Enterprise,162,4665.60,1158.55
+2024-03-10,United States,Paseo,Government,175,5264.00,1488.26
+2024-03-11,France,VTT,Government,106,7771.92,2696.62
+2024-03-11,United Kingdom,Montana,Enterprise,188,4060.80,846.62
+2024-03-12,Canada,Velo,Channel Partners,90,3483.00,328.96
+2024-03-12,France,Velo,Small Business,49,2160.90,442.61
+2024-03-13,Canada,Paseo,Enterprise,165,4752.00,1171.94
+2024-03-14,United States,Velo,Channel Partners,144,5572.80,981.62
+2024-03-15,France,Amarilla,Enterprise,84,9450.00,2939.06
+2024-03-15,France,Montana,Government,206,4647.36,1305.88
+2024-03-15,France,VTT,Small Business,60,4586.40,1741.19
+2024-03-15,United States,Carretera,Enterprise,326,5281.20,1254.28
+2024-03-15,United States,Carretera,Small Business,178,3139.92,1129.40
+2024-03-16,France,Amarilla,Midmarket,61,7320.00,2924.32
+2024-03-16,France,Carretera,Enterprise,252,4082.40,989.41
+2024-03-16,Germany,Montana,Small Business,107,2516.64,551.30
+2024-03-16,United States,Velo,Enterprise,237,9598.50,1480.33
+2024-03-17,Canada,Carretera,Enterprise,195,3159.00,837.32
+2024-03-17,United Kingdom,Montana,Government,199,4489.44,931.77
+2024-03-19,Germany,Amarilla,Small Business,45,5512.50,2076.05
+2024-03-19,Germany,Velo,Enterprise,161,6520.50,1688.98
+2024-03-19,United States,VTT,Channel Partners,102,6842.16,1960.61
+2024-03-20,France,Carretera,Channel Partners,138,2136.24,408.89
+2024-03-20,Germany,Amarilla,Enterprise,77,8662.50,3157.18
+2024-03-21,Germany,VTT,Midmarket,61,4567.68,1724.90
+2024-03-21,United Kingdom,Paseo,Government,207,6226.56,2222.74
+2024-03-22,Canada,Paseo,Channel Partners,135,3715.20,1027.13
+2024-03-22,France,Montana,Small Business,81,1905.12,437.34
+2024-03-23,France,Paseo,Government,219,6587.52,2017.71
+2024-03-23,United States,VTT,Small Business,108,8255.52,2801.38
+2024-03-24,France,Amarilla,Government,79,9282.50,3775.50
+2024-03-25,Germany,Carretera,Enterprise,132,2138.40,584.22
+2024-03-25,India,Amarilla,Enterprise,102,11475.00,4698.10
+2024-03-26,France,VTT,Midmarket,61,4567.68,1709.79
+2024-03-26,India,Carretera,Small Business,115,2028.60,459.38
+2024-03-27,Canada,VTT,Channel Partners,63,4226.04,1161.58
+2024-03-27,France,Carretera,Government,277,4686.84,898.99
+2024-03-27,United Kingdom,VTT,Small Business,68,5197.92,2285.25
+2024-03-28,Germany,Amarilla,Channel Partners,52,5590.00,1578.65
+2024-03-28,Germany,Velo,Small Business,61,2690.10,601.14
+2024-03-28,United States,Montana,Channel Partners,239,4932.96,694.15
+2024-03-29,United Kingdom,Velo,Government,168,7106.40,993.90
+2024-03-30,United Kingdom,Amarilla,Enterprise,93,10462.50,4008.89
+2024-03-30,United Kingdom,Montana,Channel Partners,83,1713.12,368.23
+2024-03-31,Canada,Montana,Government,186,4196.16,1004.93
+2024-03-31,Canada,VTT,Midmarket,54,4043.52,1408.67
+2024-03-31,India,Paseo,Channel Partners,60,1651.20,432.95
+2024-03-31,United Kingdom,VTT,Government,137,10044.84,4027.39
+2024-04-02,France,Carretera,Government,195,3299.40,814.52
+2024-04-02,India,Montana,Government,175,3948.00,810.00
+2024-04-02,United States,Velo,Midmarket,184,7948.80,1592.09
+2024-04-03,France,Amarilla,Small Business,57,6982.50,2844.71
+2024-04-03,India,Amarilla,Enterprise,78,8775.00,2800.13
+2024-04-03,India,Paseo,Enterprise,137,3945.60,1144.26
+2024-04-03,United States,Montana,Midmarket,123,2833.92,639.77
+2024-04-03,United States,Paseo,Small Business,126,3951.36,1392.84
+2024-04-04,Germany,Amarilla,Small Business,63,7717.50,2855.31
+2024-04-04,Germany,Montana,Enterprise,244,5270.40,1076.55
+2024-04-04,United States,Montana,Government,291,6564.96,1750.81
+2024-04-05,Germany,Velo,Enterprise,173,7006.50,1279.36
+2024-04-05,United States,Velo,Enterprise,202,8181.00,756.79
+2024-04-06,Canada,Montana,Enterprise,182,3931.20,971.35
+2024-04-06,Canada,Velo,Enterprise,145,5872.50,1349.53
+2024-04-08,India,Montana,Enterprise,178,3844.80,804.15
+2024-04-09,Canada,Amarilla,Channel Partners,43,4622.50,1557.86
+2024-04-09,United Kingdom,Montana,Small Business,88,2069.76,634.92
+2024-04-10,India,Paseo,Small Business,70,2195.20,754.24
+2024-04-11,France,VTT,Midmarket,76,5690.88,1896.64
+2024-04-11,Germany,Amarilla,Enterprise,106,11925.00,4939.70
+2024-04-11,Germany,VTT,Enterprise,137,9617.40,3277.25
+2024-04-12,France,Carretera,Channel Partners,137,2120.76,539.48
+2024-04-12,France,VTT,Government,109,7991.88,2422.34
+2024-04-13,Canada,Amarilla,Midmarket,51,6120.00,2626.62
+2024-04-13,United States,Paseo,Channel Partners,160,4403.20,1282.11
+2024-04-14,United States,Paseo,Enterprise,204,5875.20,2066.09
+2024-04-15,India,Velo,Midmarket,110,4752.00,1231.93
+2024-04-16,Canada,Amarilla,Enterprise,80,9000.00,3154.95
+2024-04-16,Canada,Carretera,Enterprise,224,3628.80,869.94
+2024-04-16,France,Paseo,Enterprise,257,7401.60,2177.35
+2024-04-16,India,Amarilla,Government,83,9752.50,4006.83
+2024-04-17,Canada,VTT,Enterprise,85,5967.00,1847.82
+2024-04-18,France,VTT,Channel Partners,82,5500.56,1970.30
+2024-04-18,India,Amarilla,Midmarket,55,6600.00,2604.20
+2024-04-19,France,Montana,Enterprise,178,3844.80,706.27
+2024-04-20,France,Amarilla,Channel Partners,57,6127.50,2353.87
+2024-04-20,Germany,VTT,Small Business,59,4509.96,2030.16
+2024-04-20,United Kingdom,Carretera,Midmarket,149,2574.72,757.87
+2024-04-21,Canada,Carretera,Government,248,4196.16,1323.23
+2024-04-21,Canada,Velo,Channel Partners,98,3792.60,466.37
+2024-04-21,Germany,Amarilla,Midmarket,87,10440.00,4236.25
+2024-04-21,India,VTT,Enterprise,84,5896.80,1902.89
+2024-04-21,United Kingdom,Carretera,Small Business,152,2681.28,746.54
+2024-04-22,France,Carretera,Midmarket,115,1987.20,500.79
+2024-04-22,Germany,Paseo,Midmarket,100,3072.00,933.68
+2024-04-22,Germany,Paseo,Small Business,28,878.08,311.35
+2024-04-23,India,VTT,Midmarket,85,6364.80,2314.73
+2024-04-23,United States,Montana,Enterprise,213,4600.80,997.21
+2024-04-24,France,Paseo,Small Business,110,3449.60,1004.20
+2024-04-24,Germany,VTT,Channel Partners,88,5903.04,1639.65
+2024-04-25,France,VTT,Enterprise,123,8634.60,3220.37
+2024-04-25,United States,Carretera,Government,474,8020.08,2436.90
+2024-04-26,Germany,Carretera,Channel Partners,167,2585.16,593.11
+2024-04-26,United Kingdom,Velo,Channel Partners,113,4373.10,468.46
+2024-04-26,United States,Carretera,Channel Partners,208,3219.84,856.15
+2024-04-27,France,VTT,Small Business,42,3210.48,1118.80
+2024-04-27,Germany,Montana,Government,217,4895.52,1328.21
+2024-04-27,India,Paseo,Channel Partners,56,1541.12,334.00
+2024-04-28,Canada,Montana,Government,187,4218.72,856.34
+2024-04-30,Germany,Carretera,Small Business,76,1340.64,306.59
+2024-04-30,United Kingdom,Velo,Government,152,6429.60,929.21
+2024-05-01,Canada,VTT,Channel Partners,49,3286.92,918.43
+2024-05-01,Canada,Velo,Midmarket,119,5140.80,1028.52
+2024-05-01,United States,Carretera,Small Business,208,3669.12,825.00
+2024-05-01,United States,VTT,Midmarket,67,5016.96,1895.91
+2024-05-01,United States,Velo,Small Business,129,5688.90,799.43
+2024-05-03,France,Montana,Channel Partners,120,2476.80,647.46
+2024-05-04,France,Velo,Small Business,63,2778.30,581.93
+2024-05-04,India,Paseo,Small Business,93,2916.48,934.05
+2024-05-05,Canada,Carretera,Midmarket,151,2609.28,588.92
+2024-05-05,United States,Amarilla,Enterprise,132,14850.00,5184.00
+2024-05-06,France,Amarilla,Midmarket,72,8640.00,3436.50
+2024-05-06,India,Paseo,Midmarket,108,3317.76,1091.28
+2024-05-06,United Kingdom,Amarilla,Midmarket,74,8880.00,3628.23
+2024-05-07,Germany,VTT,Midmarket,87,6514.56,1848.62
+2024-05-08,United States,Paseo,Channel Partners,92,2531.84,589.89
+2024-05-09,United Kingdom,Velo,Midmarket,110,4752.00,980.66
+2024-05-11,United Kingdom,Amarilla,Small Business,59,7227.50,2675.91
+2024-05-12,Canada,Montana,Midmarket,124,2856.96,798.81
+2024-05-13,Canada,VTT,Small Business,56,4280.64,1762.79
+2024-05-14,United States,Montana,Government,232,5233.92,987.86
+2024-05-16,Canada,Paseo,Channel Partners,105,2889.60,953.32
+2024-05-16,United States,Amarilla,Small Business,71,8697.50,3289.52
+2024-05-17,Canada,Velo,Enterprise,159,6439.50,672.33
+2024-05-17,France,VTT,Small Business,48,3669.12,1322.51
+2024-05-18,France,Carretera,Small Business,138,2434.32,729.72
+2024-05-19,India,Amarilla,Small Business,52,6370.00,2263.71
+2024-05-19,India,Montana,Government,211,4760.16,1304.94
+2024-05-19,United States,Amarilla,Channel Partners,107,11502.50,3482.07
+2024-05-20,United Kingdom,Carretera,Midmarket,149,2574.72,631.54
+2024-05-20,United Kingdom,Montana,Government,338,7625.28,2177.32
+2024-05-21,Canada,Carretera,Enterprise,177,2867.40,705.60
+2024-05-21,United States,Velo,Enterprise,337,13648.50,2400.30
+2024-05-23,Germany,VTT,Government,105,7698.60,2386.57
+2024-05-23,United Kingdom,Montana,Midmarket,149,3432.96,979.78
+2024-05-24,Germany,Carretera,Channel Partners,128,1981.44,498.46
+2024-05-24,Germany,VTT,Small Business,97,7414.68,2644.46
+2024-05-25,India,VTT,Midmarket,59,4417.92,1666.21
+2024-05-26,France,Paseo,Midmarket,113,3471.36,1112.83
+2024-05-26,Germany,Carretera,Enterprise,219,3547.80,800.30
+2024-05-26,Germany,Paseo,Government,154,4632.32,1305.63
+2024-05-27,Canada,Amarilla,Channel Partners,55,5912.50,2219.61
+2024-05-27,United Kingdom,Amarilla,Enterprise,112,12600.00,5063.81
+2024-05-27,United States,VTT,Government,246,18036.72,5654.41
+2024-05-28,India,Amarilla,Enterprise,55,6187.50,2425.52
+2024-05-28,United States,Paseo,Enterprise,332,9561.60,2083.73
+2024-05-29,Germany,Carretera,Midmarket,104,1797.12,385.95
+2024-05-29,Germany,Montana,Small Business,124,2916.48,781.91
+2024-05-29,Germany,Velo,Channel Partners,94,3637.80,291.15
+2024-05-29,Germany,Velo,Midmarket,123,5313.60,1154.00
+2024-05-29,India,Amarilla,Channel Partners,49,5267.50,2120.92
+2024-05-29,United Kingdom,Amarilla,Channel Partners,92,9890.00,3670.43
+2024-05-30,Canada,Paseo,Midmarket,147,4515.84,1484.00
+2024-05-30,France,Amarilla,Small Business,40,4900.00,2332.03
+2024-05-30,France,Montana,Enterprise,189,4082.40,615.62
+2024-05-30,Germany,Montana,Midmarket,180,4147.20,1092.95
+2024-05-30,India,Paseo,Government,200,6016.00,2198.09
+2024-05-30,United Kingdom,VTT,Channel Partners,88,5903.04,1637.42
+2024-05-30,United States,Amarilla,Government,139,16332.50,6906.55
+2024-05-31,France,Carretera,Enterprise,248,4017.60,807.27
+2024-05-31,France,Carretera,Midmarket,163,2816.64,875.51
+2024-05-31,Germany,Amarilla,Government,143,16802.50,5458.18
+2024-05-31,India,Velo,Midmarket,100,4320.00,809.04
+2024-06-02,Germany,Montana,Midmarket,169,3893.76,916.04
+2024-06-02,United States,VTT,Government,169,12391.08,4824.03
+2024-06-04,Germany,Montana,Channel Partners,162,3343.68,606.83
+2024-06-04,India,Paseo,Enterprise,143,4118.40,1292.11
+2024-06-04,India,Velo,Channel Partners,89,3444.30,596.70
+2024-06-04,United Kingdom,VTT,Government,215,15763.80,5176.66
+2024-06-05,Germany,Carretera,Small Business,101,1781.64,466.34
+2024-06-05,India,Carretera,Midmarket,131,2263.68,562.66
+2024-06-06,Canada,Montana,Small Business,109,2563.68,579.08
+2024-06-06,France,Paseo,Government,186,5594.88,1918.10
+2024-06-06,Germany,Carretera,Channel Partners,129,1996.92,400.66
+2024-06-07,France,Montana,Channel Partners,95,1960.80,382.20
+2024-06-07,United Kingdom,Amarilla,Midmarket,79,9480.00,3557.92
+2024-06-08,India,Paseo,Small Business,80,2508.80,931.94
+2024-06-09,India,Amarilla,Channel Partners,31,3332.50,929.47
+2024-06-09,United States,Paseo,Government,273,8211.84,2992.63
+2024-06-10,France,Amarilla,Enterprise,53,5962.50,1917.42
+2024-06-10,France,Velo,Enterprise,181,7330.50,1249.26
+2024-06-11,United Kingdom,Carretera,Small Business,99,1746.36,525.89
+2024-06-11,United Kingdom,VTT,Small Business,57,4357.08,1640.77
+2024-06-12,Canada,VTT,Small Business,44,3363.36,1259.14
+2024-06-12,Canada,Velo,Enterprise,140,5670.00,820.49
+2024-06-12,United Kingdom,Paseo,Enterprise,249,7171.20,2383.79
+2024-06-12,United States,Amarilla,Small Business,68,8330.00,3119.92
+2024-06-13,Canada,VTT,Channel Partners,69,4628.52,1407.08
+2024-06-13,Germany,Velo,Government,178,7529.40,1465.18
+2024-06-14,United States,Velo,Channel Partners,119,4605.30,916.43
+2024-06-15,Canada,Montana,Government,198,4466.88,1031.84
+2024-06-15,Canada,Paseo,Small Business,96,3010.56,910.60
+2024-06-16,Canada,Velo,Channel Partners,76,2941.20,498.12
+2024-06-16,India,Montana,Channel Partners,84,1733.76,370.88
+2024-06-17,France,Carretera,Midmarket,105,1814.40,500.69
+2024-06-17,India,Amarilla,Enterprise,78,8775.00,2550.12
+2024-06-17,United Kingdom,Montana,Channel Partners,137,2827.68,698.37
+2024-06-18,Germany,VTT,Channel Partners,95,6372.60,2361.54
+2024-06-18,India,VTT,Small Business,47,3592.68,1245.61
+2024-06-18,United Kingdom,Paseo,Midmarket,104,3194.88,1095.80
+2024-06-18,United States,Paseo,Enterprise,332,9561.60,2953.37
+2024-06-19,Canada,Carretera,Enterprise,194,3142.80,813.98
+2024-06-19,Canada,VTT,Enterprise,132,9266.40,3274.63
+2024-06-19,India,Montana,Midmarket,153,3525.12,884.16
+2024-06-20,United States,VTT,Midmarket,142,10632.96,3352.83
+2024-06-21,Canada,Montana,Channel Partners,135,2786.40,485.07
+2024-06-21,India,Montana,Government,125,2820.00,698.46
+2024-06-22,Germany,Amarilla,Enterprise,90,10125.00,3243.96
+2024-06-23,Canada,Paseo,Government,261,7850.88,2484.27
+2024-06-23,France,Montana,Enterprise,190,4104.00,631.87
+2024-06-23,United Kingdom,Paseo,Channel Partners,130,3577.60,964.69
+2024-06-24,Germany,Carretera,Enterprise,261,4228.20,1027.36
+2024-06-24,United Kingdom,Velo,Enterprise,197,7978.50,1453.56
+2024-06-25,France,Carretera,Enterprise,172,2786.40,659.02
+2024-06-25,India,Carretera,Enterprise,264,4276.80,984.43
+2024-06-25,United States,Carretera,Small Business,127,2240.28,756.42
+2024-06-26,France,Amarilla,Channel Partners,51,5482.50,1886.30
+2024-06-26,Germany,Amarilla,Small Business,50,6125.00,2700.54
+2024-06-26,United States,Paseo,Midmarket,149,4577.28,1396.60
+2024-06-26,United States,VTT,Enterprise,131,9196.20,3302.17
+2024-06-27,India,Velo,Government,183,7740.90,853.61
+2024-06-28,Germany,Amarilla,Midmarket,93,11160.00,4468.15
+2024-06-28,Germany,VTT,Enterprise,141,9898.20,3867.55
+2024-06-29,India,Velo,Small Business,77,3395.70,673.56
+2024-06-30,France,VTT,Small Business,66,5045.04,2167.04
+2024-07-02,France,Amarilla,Government,139,16332.50,6308.65
+2024-07-02,France,Carretera,Small Business,84,1481.76,467.81
+2024-07-04,Canada,Carretera,Small Business,115,2028.60,527.52
+2024-07-04,Canada,Paseo,Government,202,6076.16,2203.57
+2024-07-04,United Kingdom,Amarilla,Small Business,46,5635.00,2106.44
+2024-07-05,France,Amarilla,Midmarket,68,8160.00,3130.40
+2024-07-05,United Kingdom,Carretera,Enterprise,249,4033.80,1086.19
+2024-07-07,France,Paseo,Small Business,93,2916.48,1118.24
+2024-07-07,France,VTT,Government,98,7185.36,2490.40
+2024-07-07,Germany,Montana,Government,274,6181.44,1548.45
+2024-07-07,United States,VTT,Channel Partners,140,9391.20,2726.04
+2024-07-08,France,Amarilla,Enterprise,95,10687.50,4201.64
+2024-07-08,United States,Amarilla,Small Business,61,7472.50,2734.54
+2024-07-08,United States,Montana,Government,213,4805.28,1289.30
+2024-07-09,France,Carretera,Enterprise,158,2559.60,589.03
+2024-07-10,Germany,Carretera,Midmarket,192,3317.76,641.95
+2024-07-10,India,VTT,Small Business,51,3898.44,1371.57
+2024-07-10,United Kingdom,Amarilla,Midmarket,87,10440.00,4282.52
+2024-07-10,United States,VTT,Midmarket,147,11007.36,4050.99
+2024-07-11,Canada,Velo,Midmarket,86,3715.20,769.40
+2024-07-11,Germany,Carretera,Channel Partners,121,1873.08,462.78
+2024-07-12,India,Amarilla,Enterprise,57,6412.50,2491.16
+2024-07-12,United Kingdom,Montana,Channel Partners,121,2497.44,396.50
+2024-07-13,Canada,Velo,Government,157,6641.10,1530.34
+2024-07-13,France,Carretera,Government,187,3164.04,909.76
+2024-07-13,India,VTT,Enterprise,90,6318.00,2052.59
+2024-07-13,United Kingdom,VTT,Government,96,7038.72,2543.80
+2024-07-13,United States,Amarilla,Enterprise,143,16087.50,6356.01
+2024-07-15,Canada,VTT,Government,145,10631.40,3884.14
+2024-07-16,Germany,Montana,Small Business,100,2352.00,683.81
+2024-07-16,Germany,VTT,Small Business,75,5733.00,1955.18
+2024-07-17,United Kingdom,Velo,Midmarket,125,5400.00,895.43
+2024-07-17,United States,VTT,Small Business,101,7720.44,2718.01
+2024-07-19,France,Paseo,Government,172,5173.76,1487.60
+2024-07-19,India,Carretera,Small Business,53,934.92,180.47
+2024-07-20,Germany,Amarilla,Midmarket,69,8280.00,3361.90
+2024-07-21,France,VTT,Channel Partners,51,3421.08,1247.39
+2024-07-21,India,Velo,Midmarket,97,4190.40,680.51
+2024-07-22,India,Carretera,Channel Partners,66,1021.68,278.81
+2024-07-23,India,VTT,Government,115,8431.80,2639.66
+2024-07-23,United Kingdom,Amarilla,Government,84,9870.00,3950.41
+2024-07-24,Canada,Carretera,Midmarket,194,3352.32,785.99
+2024-07-24,India,Montana,Midmarket,119,2741.76,644.92
+2024-07-24,United Kingdom,Carretera,Government,285,4822.20,1311.64
+2024-07-25,France,VTT,Midmarket,66,4942.08,1826.97
+2024-07-25,India,Velo,Channel Partners,74,2863.80,337.07
+2024-07-25,United States,Montana,Enterprise,241,5205.60,1267.73
+2024-07-26,India,Montana,Government,169,3812.64,791.63
+2024-07-26,United Kingdom,Montana,Enterprise,196,4233.60,1061.85
+2024-07-27,United States,Paseo,Enterprise,177,5097.60,1451.98
+2024-07-27,United States,Paseo,Small Business,165,5174.40,1644.75
+2024-07-28,Canada,Amarilla,Channel Partners,75,8062.50,2397.60
+2024-07-28,Canada,Montana,Channel Partners,151,3116.64,531.80
+2024-07-29,Canada,Paseo,Channel Partners,100,2752.00,765.47
+2024-07-29,Canada,VTT,Small Business,57,4357.08,1647.71
+2024-07-29,Germany,Amarilla,Enterprise,110,12375.00,3551.02
+2024-07-29,United Kingdom,Carretera,Channel Partners,183,2832.84,579.62
+2024-07-29,United Kingdom,VTT,Small Business,73,5580.12,1973.72
+2024-07-30,Germany,Amarilla,Government,117,13747.50,5143.78
+2024-07-30,United Kingdom,Montana,Small Business,114,2681.28,719.44
+2024-07-31,Canada,Montana,Small Business,64,1505.28,479.21
+2024-07-31,United Kingdom,Carretera,Small Business,120,2116.80,687.20
+2024-08-01,France,Amarilla,Enterprise,92,10350.00,3756.48
+2024-08-01,Germany,Velo,Channel Partners,122,4721.40,742.07
+2024-08-01,United Kingdom,Montana,Channel Partners,120,2476.80,430.56
+2024-08-02,Germany,Velo,Government,196,8290.80,1252.59
+2024-08-02,United Kingdom,Carretera,Midmarket,227,3922.56,1183.94
+2024-08-02,United States,VTT,Government,160,11731.20,4111.76
+2024-08-02,United States,VTT,Small Business,81,6191.64,2486.48
+2024-08-03,India,VTT,Small Business,52,3974.88,1385.07
+2024-08-03,United Kingdom,Amarilla,Government,141,16567.50,6350.43
+2024-08-03,United Kingdom,Carretera,Government,296,5008.32,1389.98
+2024-08-04,France,Carretera,Midmarket,100,1728.00,487.22
+2024-08-04,Germany,Paseo,Channel Partners,107,2944.64,765.01
+2024-08-04,Germany,Velo,Midmarket,116,5011.20,501.68
+2024-08-05,France,Carretera,Enterprise,272,4406.40,929.83
+2024-08-05,United States,Paseo,Channel Partners,116,3192.32,677.15
+2024-08-05,United States,Velo,Government,277,11717.10,2472.39
+2024-08-06,France,Montana,Channel Partners,111,2291.04,567.59
+2024-08-06,United States,Amarilla,Channel Partners,56,6020.00,1730.87
+2024-08-07,Canada,Velo,Midmarket,92,3974.40,827.86
+2024-08-07,India,Montana,Midmarket,104,2396.16,671.38
+2024-08-07,United Kingdom,Velo,Small Business,60,2646.00,715.87
+2024-08-08,Germany,Carretera,Midmarket,202,3490.56,839.42
+2024-08-08,India,Amarilla,Small Business,35,4287.50,1710.33
+2024-08-08,United States,Paseo,Government,266,8001.28,2500.13
+2024-08-09,Canada,Carretera,Enterprise,150,2430.00,486.69
+2024-08-09,United Kingdom,Montana,Enterprise,221,4773.60,1373.32
+2024-08-10,France,Montana,Small Business,74,1740.48,486.74
+2024-08-10,France,Velo,Channel Partners,78,3018.60,539.27
+2024-08-12,France,Amarilla,Government,76,8930.00,3696.03
+2024-08-12,Germany,Carretera,Channel Partners,114,1764.72,331.05
+2024-08-12,United Kingdom,Carretera,Small Business,118,2081.52,577.64
+2024-08-13,United States,Carretera,Enterprise,390,6318.00,1330.32
+2024-08-14,United Kingdom,VTT,Small Business,83,6344.52,2673.85
+2024-08-15,India,Montana,Enterprise,110,2376.00,456.40
+2024-08-15,United States,Amarilla,Small Business,57,6982.50,2650.58
+2024-08-16,United States,Carretera,Midmarket,283,4890.24,1196.43
+2024-08-16,United States,Montana,Channel Partners,61,1259.04,185.53
+2024-08-17,Germany,Montana,Midmarket,102,2350.08,573.83
+2024-08-20,Canada,VTT,Government,110,8065.20,2505.99
+2024-08-20,India,Paseo,Channel Partners,60,1651.20,364.17
+2024-08-20,United Kingdom,Velo,Enterprise,139,5629.50,1110.13
+2024-08-21,Canada,Carretera,Channel Partners,115,1780.20,480.74
+2024-08-21,France,Carretera,Small Business,89,1569.96,493.96
+2024-08-21,Germany,Paseo,Enterprise,299,8611.20,2479.85
+2024-08-22,France,Carretera,Government,208,3519.36,972.61
+2024-08-22,Germany,VTT,Government,130,9531.60,3431.64
+2024-08-23,France,Paseo,Government,148,4451.84,1540.99
+2024-08-23,Germany,Montana,Government,120,2707.20,722.65
+2024-08-23,India,VTT,Midmarket,82,6140.16,2214.75
+2024-08-23,India,Velo,Enterprise,101,4090.50,659.10
+2024-08-24,Canada,Amarilla,Midmarket,68,8160.00,2814.17
+2024-08-24,Canada,Paseo,Government,171,5143.68,1673.85
+2024-08-24,India,Paseo,Government,141,4241.28,1258.32
+2024-08-25,Germany,Paseo,Midmarket,106,3256.32,1085.31
+2024-08-25,United Kingdom,Paseo,Government,177,5324.16,1563.18
+2024-08-29,Canada,Montana,Enterprise,156,3369.60,1060.38
+2024-08-29,Canada,Montana,Midmarket,123,2833.92,708.21
+2024-08-30,Canada,Paseo,Small Business,84,2634.24,811.68
+2024-08-30,France,Paseo,Channel Partners,74,2036.48,529.78
+2024-08-30,India,Paseo,Enterprise,104,2995.20,863.32
+2024-08-30,India,VTT,Enterprise,92,6458.40,1875.06
+2024-08-30,United Kingdom,Carretera,Channel Partners,125,1935.00,466.62
+2024-09-01,Germany,Montana,Small Business,122,2869.44,722.97
+2024-09-02,United Kingdom,Montana,Small Business,111,2610.72,538.16
+2024-09-02,United Kingdom,VTT,Midmarket,115,8611.20,2966.86
+2024-09-02,United States,Carretera,Midmarket,276,4769.28,928.41
+2024-09-03,Canada,Paseo,Enterprise,64,1843.20,491.73
+2024-09-03,India,Paseo,Small Business,96,3010.56,992.04
+2024-09-04,Canada,Amarilla,Enterprise,124,13950.00,5122.19
+2024-09-04,Germany,Amarilla,Government,138,16215.00,6323.04
+2024-09-04,India,Carretera,Government,222,3756.24,794.47
+2024-09-04,United Kingdom,VTT,Channel Partners,103,6909.24,2038.64
+2024-09-04,United Kingdom,VTT,Government,132,9678.24,3382.49
+2024-09-05,India,Amarilla,Enterprise,103,11587.50,4693.22
+2024-09-05,India,Amarilla,Small Business,40,4900.00,1913.35
+2024-09-05,United Kingdom,Carretera,Channel Partners,211,3266.28,747.97
+2024-09-07,Canada,Carretera,Midmarket,153,2643.84,772.03
+2024-09-07,Canada,Paseo,Small Business,148,4641.28,1556.45
+2024-09-07,France,Velo,Enterprise,184,7452.00,1383.49
+2024-09-07,India,VTT,Government,147,10778.04,3164.23
+2024-09-08,Canada,Paseo,Midmarket,146,4485.12,1278.54
+2024-09-08,Canada,Velo,Enterprise,115,4657.50,974.58
+2024-09-08,France,Velo,Channel Partners,114,4411.80,701.02
+2024-09-08,Germany,Paseo,Government,278,8362.24,2449.30
+2024-09-08,United Kingdom,Amarilla,Small Business,74,9065.00,3416.95
+2024-09-08,United States,Montana,Channel Partners,120,2476.80,503.70
+2024-09-09,United States,Amarilla,Government,187,21972.50,7785.93
+2024-09-10,United Kingdom,Montana,Channel Partners,198,4086.72,827.01
+2024-09-12,Germany,VTT,Enterprise,129,9055.80,3065.03
+2024-09-12,United Kingdom,Montana,Enterprise,173,3736.80,679.69
+2024-09-12,United States,Velo,Midmarket,159,6868.80,1314.21
+2024-09-13,Germany,Montana,Midmarket,169,3893.76,1055.90
+2024-09-13,United Kingdom,Carretera,Government,316,5346.72,1558.94
+2024-09-14,United Kingdom,Velo,Enterprise,144,5832.00,755.67
+2024-09-15,United Kingdom,Amarilla,Government,154,18095.00,5621.17
+2024-09-17,France,Montana,Small Business,96,2257.92,487.54
+2024-09-18,Canada,Carretera,Small Business,137,2416.68,710.00
+2024-09-18,Canada,VTT,Government,88,6452.16,2428.29
+2024-09-18,Germany,Paseo,Enterprise,167,4809.60,1466.32
+2024-09-18,United States,Amarilla,Enterprise,154,17325.00,5410.42
+2024-09-19,Canada,VTT,Enterprise,92,6458.40,2351.46
+2024-09-19,India,Carretera,Channel Partners,132,2043.36,337.47
+2024-09-19,India,VTT,Midmarket,80,5990.40,2644.86
+2024-09-21,Germany,Paseo,Small Business,103,3230.08,910.30
+2024-09-21,India,Amarilla,Channel Partners,56,6020.00,1851.10
+2024-09-21,United States,Amarilla,Channel Partners,103,11072.50,3895.24
+2024-09-22,Canada,Velo,Channel Partners,124,4798.80,490.01
+2024-09-23,France,Montana,Government,227,5121.12,1428.11
+2024-09-23,Germany,Carretera,Enterprise,267,4325.40,1022.89
+2024-09-23,United Kingdom,Amarilla,Channel Partners,84,9030.00,3238.80
+2024-09-24,Germany,VTT,Government,134,9824.88,3613.30
+2024-09-24,United Kingdom,Montana,Midmarket,206,4746.24,1424.47
+2024-09-25,France,Montana,Midmarket,182,4193.28,860.22
+2024-09-25,India,Amarilla,Government,113,13277.50,4868.61
+2024-09-26,Canada,Montana,Small Business,116,2728.32,611.13
+2024-09-26,Canada,Paseo,Government,232,6978.56,1934.27
+2024-09-26,India,VTT,Channel Partners,66,4427.28,1373.29
+2024-09-26,India,Velo,Government,149,6302.70,1491.36
+2024-09-26,United Kingdom,Paseo,Enterprise,275,7920.00,2472.16
+2024-09-27,Canada,Amarilla,Midmarket,62,7440.00,2731.42
+2024-09-27,India,Montana,Enterprise,224,4838.40,1318.20
+2024-09-27,United States,Carretera,Channel Partners,264,4086.72,1070.25
+2024-09-28,Canada,Amarilla,Channel Partners,70,7525.00,2766.14
+2024-09-30,Canada,Montana,Government,253,5707.68,1283.93
+2024-10-01,France,Velo,Enterprise,194,7857.00,1684.49
+2024-10-01,Germany,Paseo,Channel Partners,170,4678.40,931.63
+2024-10-01,Germany,Paseo,Midmarket,141,4331.52,1352.18
+2024-10-01,India,Amarilla,Enterprise,100,11250.00,4652.73
+2024-10-01,United Kingdom,Montana,Channel Partners,164,3384.96,688.33
+2024-10-01,United States,Amarilla,Small Business,91,11147.50,4915.99
+2024-10-02,Germany,Montana,Channel Partners,175,3612.00,763.03
+2024-10-02,United Kingdom,Montana,Midmarket,216,4976.64,1343.86
+2024-10-03,Canada,Velo,Government,159,6725.70,1132.96
+2024-10-04,India,Velo,Midmarket,123,5313.60,1090.73
+2024-10-05,India,VTT,Enterprise,99,6949.80,1929.44
+2024-10-05,United Kingdom,Carretera,Midmarket,130,2246.40,588.54
+2024-10-07,Canada,Amarilla,Small Business,61,7472.50,3202.68
+2024-10-07,France,Velo,Small Business,53,2337.30,442.79
+2024-10-07,Germany,Montana,Enterprise,331,7149.60,1553.34
+2024-10-08,United States,Amarilla,Enterprise,157,17662.50,6154.94
+2024-10-09,Canada,VTT,Government,228,16716.96,5134.55
+2024-10-09,Canada,Velo,Small Business,76,3351.60,610.82
+2024-10-09,France,Carretera,Channel Partners,152,2352.96,476.40
+2024-10-09,France,Montana,Enterprise,184,3974.40,855.10
+2024-10-09,India,Paseo,Enterprise,167,4809.60,1925.99
+2024-10-09,United States,Montana,Government,466,10512.96,2915.23
+2024-10-10,Canada,Amarilla,Enterprise,138,15525.00,5277.59
+2024-10-10,France,Amarilla,Midmarket,63,7560.00,2882.16
+2024-10-12,Germany,VTT,Channel Partners,74,4963.92,1844.92
+2024-10-12,Germany,Velo,Government,261,11040.30,2507.77
+2024-10-12,India,Carretera,Enterprise,209,3385.80,907.67
+2024-10-12,India,Velo,Government,135,5710.50,982.26
+2024-10-13,Germany,Montana,Government,170,3835.20,916.59
+2024-10-13,United States,Amarilla,Government,173,20327.50,8154.83
+2024-10-13,United States,VTT,Small Business,113,8637.72,3271.33
+2024-10-14,Canada,Montana,Midmarket,107,2465.28,562.47
+2024-10-14,United States,Carretera,Government,389,6581.88,1587.95
+2024-10-15,France,Paseo,Channel Partners,123,3384.96,968.10
+2024-10-15,United States,VTT,Government,221,16203.72,5673.88
+2024-10-17,India,Amarilla,Midmarket,98,11760.00,4100.53
+2024-10-17,United Kingdom,Velo,Channel Partners,128,4953.60,676.55
+2024-10-18,France,Carretera,Midmarket,195,3369.60,827.67
+2024-10-19,Canada,Carretera,Midmarket,197,3404.16,903.03
+2024-10-19,Germany,VTT,Small Business,63,4815.72,1766.89
+2024-10-19,United Kingdom,Montana,Government,223,5030.88,955.53
+2024-10-20,United Kingdom,Paseo,Midmarket,171,5253.12,1941.58
+2024-10-21,France,Montana,Channel Partners,155,3199.20,581.65
+2024-10-22,Canada,Paseo,Midmarket,176,5406.72,1642.22
+2024-10-22,France,Montana,Government,257,5797.92,1777.95
+2024-10-22,United States,Carretera,Channel Partners,175,2709.00,527.04
+2024-10-23,United States,Montana,Small Business,152,3575.04,988.53
+2024-10-24,Canada,VTT,Small Business,81,6191.64,2242.10
+2024-10-25,France,VTT,Small Business,77,5885.88,2176.15
+2024-10-25,Germany,Velo,Channel Partners,115,4450.50,748.31
+2024-10-26,France,Montana,Midmarket,155,3571.20,834.69
+2024-10-26,India,Paseo,Channel Partners,118,3247.36,657.09
+2024-10-27,Canada,Carretera,Small Business,82,1446.48,377.47
+2024-10-27,Canada,Paseo,Enterprise,184,5299.20,1670.95
+2024-10-27,France,Amarilla,Channel Partners,67,7202.50,2513.84
+2024-10-27,United States,Carretera,Enterprise,397,6431.40,1258.74
+2024-10-29,Canada,Amarilla,Channel Partners,59,6342.50,2561.68
+2024-10-29,France,VTT,Channel Partners,72,4829.76,1863.43
+2024-10-30,France,Paseo,Government,194,5835.52,1670.27
+2024-10-31,France,Paseo,Small Business,108,3386.88,1057.26
+2024-10-31,United Kingdom,Carretera,Channel Partners,119,1842.12,434.53
+2024-10-31,United Kingdom,VTT,Midmarket,76,5690.88,2343.28
+2024-11-01,Germany,Montana,Enterprise,318,6868.80,1736.29
+2024-11-03,Germany,Montana,Channel Partners,171,3529.44,685.68
+2024-11-03,United Kingdom,Montana,Government,247,5572.32,1518.23
+2024-11-04,Canada,Velo,Midmarket,76,3283.20,658.75
+2024-11-04,India,Montana,Midmarket,191,4400.64,1091.02
+2024-11-05,Germany,Montana,Government,330,7444.80,1859.61
+2024-11-05,Germany,Paseo,Government,324,9745.92,3376.71
+2024-11-05,India,Velo,Government,237,10025.10,1868.10
+2024-11-06,Canada,Montana,Channel Partners,111,2291.04,303.80
+2024-11-06,France,Velo,Government,180,7614.00,1361.36
+2024-11-06,India,Montana,Government,269,6068.64,1608.23
+2024-11-06,United Kingdom,Montana,Channel Partners,87,1795.68,253.09
+2024-11-07,Germany,Carretera,Enterprise,403,6528.60,1381.07
+2024-11-07,United States,Paseo,Channel Partners,254,6990.08,2187.85
+2024-11-08,Canada,Amarilla,Channel Partners,63,6772.50,1799.64
+2024-11-09,Canada,Montana,Midmarket,247,5690.88,1288.77
+2024-11-09,United States,Paseo,Enterprise,362,10425.60,2964.95
+2024-11-10,Germany,VTT,Government,209,15323.88,5892.99
+2024-11-10,Germany,Velo,Enterprise,244,9882.00,1342.57
+2024-11-10,United Kingdom,Montana,Small Business,146,3433.92,1063.94
+2024-11-10,United Kingdom,Paseo,Government,334,10046.72,2985.86
+2024-11-10,United States,Velo,Small Business,84,3704.40,808.11
+2024-11-11,Canada,VTT,Midmarket,41,3070.08,1116.86
+2024-11-11,Germany,Velo,Channel Partners,128,4953.60,645.20
+2024-11-11,United Kingdom,Amarilla,Midmarket,86,10320.00,3989.68
+2024-11-11,United States,Carretera,Small Business,262,4621.68,1180.14
+2024-11-13,Germany,Amarilla,Small Business,98,12005.00,3992.51
+2024-11-13,India,Velo,Small Business,30,1323.00,268.96
+2024-11-14,India,VTT,Small Business,75,5733.00,2042.81
+2024-11-15,United Kingdom,Paseo,Enterprise,346,9964.80,3130.95
+2024-11-16,India,Velo,Enterprise,173,7006.50,1217.40
+2024-11-17,Canada,Carretera,Government,252,4263.84,930.39
+2024-11-17,Canada,Paseo,Small Business,81,2540.16,927.70
+2024-11-17,United Kingdom,VTT,Channel Partners,95,6372.60,1352.62
+2024-11-17,United States,Velo,Channel Partners,214,8281.80,545.57
+2024-11-18,Canada,Carretera,Midmarket,153,2643.84,631.66
+2024-11-19,India,Paseo,Small Business,115,3606.40,1099.55
+2024-11-20,France,Amarilla,Enterprise,93,10462.50,3397.56
+2024-11-20,India,Amarilla,Government,88,10340.00,4243.83
+2024-11-22,Canada,VTT,Enterprise,116,8143.20,2741.40
+2024-11-22,France,Paseo,Channel Partners,72,1981.44,657.27
+2024-11-22,India,Amarilla,Enterprise,113,12712.50,5049.20
+2024-11-22,India,Amarilla,Midmarket,90,10800.00,3660.07
+2024-11-22,United Kingdom,Paseo,Small Business,84,2634.24,942.63
+2024-11-22,United States,Paseo,Small Business,174,5456.64,1785.35
+2024-11-23,France,VTT,Government,130,9531.60,3330.46
+2024-11-23,Germany,Carretera,Channel Partners,212,3281.76,534.75
+2024-11-23,India,Montana,Enterprise,105,2268.00,441.15
+2024-11-23,United Kingdom,Velo,Government,237,10025.10,1786.28
+2024-11-24,Canada,VTT,Government,126,9238.32,3473.89
+2024-11-24,United Kingdom,Carretera,Government,373,6311.16,1293.73
+2024-11-25,France,Carretera,Enterprise,308,4989.60,1042.88
+2024-11-25,United Kingdom,Montana,Midmarket,205,4723.20,1069.82
+2024-11-26,Canada,Carretera,Enterprise,275,4455.00,984.03
+2024-11-26,France,Amarilla,Channel Partners,72,7740.00,3058.24
+2024-11-26,India,Amarilla,Channel Partners,86,9245.00,2782.02
+2024-11-26,United States,Carretera,Channel Partners,310,4798.80,1316.27
+2024-11-28,Canada,Velo,Channel Partners,91,3521.70,667.71
+2024-11-28,India,Carretera,Channel Partners,140,2167.20,456.29
+2024-11-28,India,Montana,Channel Partners,107,2208.48,441.57
+2024-11-28,United States,Montana,Enterprise,480,10368.00,2211.31
+2024-11-30,United Kingdom,Amarilla,Small Business,64,7840.00,2998.44
+2024-12-02,France,Paseo,Channel Partners,160,4403.20,1190.97
+2024-12-02,France,VTT,Channel Partners,97,6506.76,2224.55
+2024-12-02,Germany,VTT,Midmarket,160,11980.80,4775.35
+2024-12-02,India,VTT,Channel Partners,63,4226.04,1374.85
+2024-12-03,France,VTT,Government,170,12464.40,4968.10
+2024-12-04,Canada,Amarilla,Enterprise,104,11700.00,4391.21
+2024-12-04,France,Paseo,Midmarket,128,3932.16,1470.55
+2024-12-04,India,Carretera,Government,281,4754.52,1222.36
+2024-12-04,India,Velo,Channel Partners,97,3753.90,632.16
+2024-12-04,United Kingdom,VTT,Channel Partners,126,8452.08,2349.37
+2024-12-05,Germany,Montana,Channel Partners,136,2807.04,433.42
+2024-12-05,United Kingdom,Carretera,Small Business,191,3369.24,994.60
+2024-12-05,United Kingdom,Velo,Midmarket,205,8856.00,1708.29
+2024-12-06,Canada,Montana,Small Business,161,3786.72,982.61
+2024-12-06,United States,Montana,Midmarket,423,9745.92,2220.43
+2024-12-07,France,Paseo,Government,194,5835.52,1769.25
+2024-12-07,France,Velo,Enterprise,160,6480.00,1252.88
+2024-12-07,Germany,Amarilla,Channel Partners,96,10320.00,3360.88
+2024-12-07,Germany,Montana,Midmarket,282,6497.28,1475.26
+2024-12-07,India,Montana,Enterprise,128,2764.80,710.73
+2024-12-07,India,Velo,Enterprise,163,6601.50,1047.82
+2024-12-08,India,Amarilla,Small Business,80,9800.00,3161.51
+2024-12-08,United Kingdom,Carretera,Enterprise,357,5783.40,1668.94
+2024-12-08,United States,VTT,Channel Partners,220,14757.60,4492.42
+2024-12-09,France,Carretera,Midmarket,236,4078.08,1089.66
+2024-12-09,United States,Carretera,Government,297,5025.24,1397.06
+2024-12-10,France,Montana,Enterprise,276,5961.60,944.74
+2024-12-10,United Kingdom,Amarilla,Channel Partners,101,10857.50,3065.00
+2024-12-11,Germany,Velo,Small Business,87,3836.70,827.37
+2024-12-12,Canada,Paseo,Small Business,161,5048.96,1327.86
+2024-12-12,Germany,Paseo,Channel Partners,119,3274.88,737.81
+2024-12-13,Canada,Carretera,Channel Partners,206,3188.88,401.20
+2024-12-13,Germany,VTT,Enterprise,222,15584.40,4814.22
+2024-12-13,Germany,Velo,Enterprise,130,5265.00,441.22
+2024-12-14,United Kingdom,Paseo,Small Business,117,3669.12,1354.57
+2024-12-14,United States,VTT,Small Business,127,9707.88,3471.21
+2024-12-15,Germany,Amarilla,Small Business,108,13230.00,5287.26
+2024-12-16,India,Carretera,Midmarket,168,2903.04,843.19
+2024-12-16,United States,Amarilla,Midmarket,111,13320.00,5770.85
+2024-12-17,United Kingdom,Velo,Government,384,16243.20,3174.53
+2024-12-18,Germany,Paseo,Enterprise,366,10540.80,3111.51
+2024-12-18,United Kingdom,Paseo,Channel Partners,188,5173.76,1491.34
+2024-12-19,Germany,Montana,Small Business,135,3175.20,882.31
+2024-12-19,United States,VTT,Midmarket,240,17971.20,6810.11
+2024-12-20,Canada,Velo,Enterprise,189,7654.50,1389.75
+2024-12-20,United Kingdom,Carretera,Channel Partners,171,2647.08,540.38
+2024-12-20,United Kingdom,Carretera,Government,396,6700.32,2005.20
+2024-12-21,Canada,Amarilla,Government,171,20092.50,8081.33
+2024-12-21,India,Amarilla,Government,143,16802.50,6208.90
+2024-12-21,United Kingdom,VTT,Small Business,132,10090.08,4018.52
+2024-12-21,United States,Paseo,Midmarket,364,11182.08,3749.77
+2024-12-22,Germany,Carretera,Enterprise,328,5313.60,1685.14
+2024-12-24,France,VTT,Small Business,92,7032.48,2330.91
+2024-12-25,United Kingdom,Montana,Enterprise,284,6134.40,1646.57
+2024-12-25,United States,Velo,Enterprise,326,13203.00,2550.73
+2024-12-26,United States,Paseo,Small Business,170,5331.20,1530.32
+2024-12-27,United States,Paseo,Channel Partners,147,4045.44,1182.46
+2024-12-28,India,Velo,Midmarket,174,7516.80,1419.63
+2024-12-29,India,Montana,Midmarket,123,2833.92,784.79
+2024-12-29,United States,Paseo,Government,287,8632.96,2501.08
+2024-12-31,France,Carretera,Government,359,6074.28,1514.16
+2024-12-31,United Kingdom,Montana,Government,464,10467.84,1924.17
+2025-01-01,Canada,Paseo,Midmarket,130,3993.60,1437.20
+2025-01-01,France,Montana,Small Business,84,1975.68,577.16
+2025-01-02,United States,VTT,Government,187,13710.84,4485.60
+2025-01-03,France,Velo,Government,139,5879.70,1113.33
+2025-01-03,India,Carretera,Small Business,69,1217.16,379.78
+2025-01-03,United Kingdom,Montana,Enterprise,117,2527.20,474.92
+2025-01-04,France,Amarilla,Channel Partners,59,6342.50,1882.10
+2025-01-04,United States,Paseo,Small Business,129,4045.44,1283.32
+2025-01-05,India,Montana,Government,179,4038.24,937.80
+2025-01-05,United Kingdom,Paseo,Midmarket,146,4485.12,1336.08
+2025-01-05,United States,Paseo,Midmarket,133,4085.76,1243.48
+2025-01-06,Canada,Montana,Government,161,3632.16,896.49
+2025-01-06,Germany,Montana,Government,162,3654.72,1053.86
+2025-01-07,India,VTT,Midmarket,45,3369.60,1055.30
+2025-01-08,France,Paseo,Channel Partners,87,2394.24,537.72
+2025-01-08,France,Paseo,Government,205,6166.40,1640.26
+2025-01-09,United Kingdom,Amarilla,Channel Partners,53,5697.50,1939.56
+2025-01-09,United Kingdom,Montana,Channel Partners,133,2745.12,782.97
+2025-01-09,United States,Amarilla,Channel Partners,71,7632.50,2527.76
+2025-01-11,Germany,Montana,Channel Partners,135,2786.40,539.20
+2025-01-11,Germany,VTT,Small Business,40,3057.60,1317.77
+2025-01-11,United States,VTT,Channel Partners,56,3756.48,1192.85
+2025-01-12,United States,Velo,Enterprise,192,7776.00,1090.62
+2025-01-13,Canada,Carretera,Midmarket,173,2989.44,913.16
+2025-01-13,France,Velo,Midmarket,81,3499.20,784.73
+2025-01-15,United States,Amarilla,Enterprise,152,17100.00,5646.38
+2025-01-16,Canada,Montana,Small Business,100,2352.00,780.08
+2025-01-16,Germany,Paseo,Channel Partners,66,1816.32,489.52
+2025-01-17,United Kingdom,Amarilla,Government,97,11397.50,3942.04
+2025-01-18,France,Amarilla,Midmarket,38,4560.00,1621.76
+2025-01-18,India,Carretera,Channel Partners,90,1393.20,390.28
+2025-01-18,India,VTT,Enterprise,139,9757.80,2922.29
+2025-01-18,United Kingdom,Velo,Enterprise,147,5953.50,740.54
+2025-01-19,Canada,Amarilla,Channel Partners,56,6020.00,1969.76
+2025-01-19,Canada,Paseo,Enterprise,102,2937.60,668.72
+2025-01-20,Canada,Montana,Enterprise,143,3088.80,678.62
+2025-01-20,United Kingdom,Carretera,Government,231,3908.52,924.61
+2025-01-21,India,Velo,Midmarket,93,4017.60,857.65
+2025-01-22,Canada,Velo,Small Business,94,4145.40,583.79
+2025-01-22,United Kingdom,VTT,Midmarket,86,6439.68,2414.41
+2025-01-24,France,Montana,Midmarket,147,3386.88,905.64
+2025-01-24,India,Velo,Small Business,49,2160.90,384.94
+2025-01-24,United Kingdom,Paseo,Small Business,96,3010.56,714.65
+2025-01-24,United States,Velo,Midmarket,140,6048.00,1435.42
+2025-01-25,United Kingdom,Amarilla,Midmarket,82,9840.00,3367.76
+2025-01-26,Canada,Velo,Government,166,7021.80,1150.62
+2025-01-26,India,Carretera,Midmarket,109,1883.52,520.18
+2025-01-26,United States,Paseo,Government,229,6888.32,2200.83
+2025-01-27,United Kingdom,Velo,Government,150,6345.00,1141.68
+2025-01-28,Canada,Amarilla,Enterprise,65,7312.50,2381.36
+2025-01-28,France,Amarilla,Small Business,45,5512.50,2065.68
+2025-01-28,France,Carretera,Enterprise,199,3223.80,884.50
+2025-01-28,India,Carretera,Enterprise,150,2430.00,595.48
+2025-01-28,United States,Paseo,Channel Partners,190,5228.80,1527.37
+2025-01-29,Canada,Montana,Channel Partners,130,2683.20,598.82
+2025-01-29,United States,Montana,Government,309,6971.04,1348.91
+2025-01-30,Canada,Montana,Midmarket,97,2234.88,494.59
+2025-01-30,Canada,Velo,Enterprise,119,4819.50,814.18
+2025-01-30,United Kingdom,Paseo,Enterprise,206,5932.80,1799.30
+2025-01-31,Canada,VTT,Enterprise,92,6458.40,1788.79
+2025-01-31,India,Paseo,Government,165,4963.20,1242.52
+2025-01-31,United Kingdom,Carretera,Small Business,104,1834.56,453.71
+2025-02-01,Germany,VTT,Enterprise,98,6879.60,2076.64
+2025-02-02,Germany,Velo,Small Business,71,3131.10,486.36
+2025-02-02,India,Velo,Government,115,4864.50,1015.57
+2025-02-02,United States,Paseo,Government,331,9956.48,3038.54
+2025-02-03,India,VTT,Channel Partners,38,2549.04,829.89
+2025-02-03,United Kingdom,Paseo,Small Business,86,2696.96,958.68
+2025-02-03,United States,Velo,Government,256,10828.80,1370.58
+2025-02-05,Canada,Carretera,Small Business,100,1764.00,505.37
+2025-02-05,India,Carretera,Channel Partners,74,1145.52,254.73
+2025-02-06,Germany,Carretera,Channel Partners,107,1656.36,319.12
+2025-02-07,Germany,Carretera,Midmarket,204,3525.12,1055.07
+2025-02-07,India,VTT,Government,112,8211.84,3187.35
+2025-02-07,United Kingdom,Carretera,Channel Partners,161,2492.28,467.56
+2025-02-08,Canada,Montana,Enterprise,111,2397.60,436.55
+2025-02-08,India,Velo,Enterprise,100,4050.00,688.64
+2025-02-09,United States,Carretera,Enterprise,284,4600.80,1143.62
+2025-02-09,United States,Montana,Government,353,7963.68,1557.44
+2025-02-10,France,Montana,Enterprise,102,2203.20,430.10
+2025-02-10,United States,Velo,Channel Partners,145,5611.50,688.50
+2025-02-11,United Kingdom,Paseo,Channel Partners,99,2724.48,744.48
+2025-02-12,Canada,VTT,Midmarket,73,5466.24,2082.57
+2025-02-12,India,Montana,Enterprise,200,4320.00,1079.02
+2025-02-12,India,Paseo,Channel Partners,85,2339.20,620.38
+2025-02-12,United States,Carretera,Government,334,5651.28,1483.10
+2025-02-12,United States,Velo,Enterprise,206,8343.00,1723.20
+2025-02-13,Canada,VTT,Channel Partners,68,4561.44,1579.53
+2025-02-13,France,Carretera,Channel Partners,79,1222.92,315.58
+2025-02-13,United Kingdom,Montana,Enterprise,295,6372.00,1329.98
+2025-02-14,France,Carretera,Small Business,135,2381.40,726.10
+2025-02-14,United States,Paseo,Channel Partners,155,4265.60,1154.94
+2025-02-14,United States,VTT,Enterprise,203,14250.60,5284.00
+2025-02-15,United Kingdom,VTT,Midmarket,72,5391.36,1992.25
+2025-02-16,France,Montana,Small Business,67,1575.84,416.76
+2025-02-16,Germany,Montana,Midmarket,182,4193.28,1255.69
+2025-02-17,Germany,Carretera,Enterprise,353,5718.60,1175.54
+2025-02-17,United States,Velo,Midmarket,102,4406.40,665.63
+2025-02-18,France,Amarilla,Enterprise,60,6750.00,2309.92
+2025-02-18,United Kingdom,Paseo,Enterprise,167,4809.60,1566.91
+2025-02-18,United Kingdom,VTT,Small Business,70,5350.80,1893.69
+2025-02-19,France,Amarilla,Small Business,43,5267.50,2029.39
+2025-02-19,France,Paseo,Enterprise,152,4377.60,1356.48
+2025-02-19,France,Paseo,Small Business,90,2822.40,944.37
+2025-02-19,Germany,Carretera,Small Business,85,1499.40,431.68
+2025-02-20,France,Paseo,Channel Partners,125,3440.00,755.86
+2025-02-20,India,Carretera,Small Business,100,1764.00,490.77
+2025-02-20,India,Paseo,Government,167,5023.36,1520.78
+2025-02-21,Canada,Amarilla,Small Business,55,6737.50,2921.05
+2025-02-21,United Kingdom,Montana,Small Business,92,2163.84,600.53
+2025-02-22,Canada,Amarilla,Government,62,7285.00,2763.09
+2025-02-22,Canada,Paseo,Small Business,117,3669.12,1060.51
+2025-02-22,United States,Amarilla,Channel Partners,42,4515.00,1338.97
+2025-02-23,France,VTT,Government,84,6158.88,2019.00
+2025-02-23,India,Amarilla,Small Business,39,4777.50,1862.10
+2025-02-24,Germany,Velo,Channel Partners,111,4295.70,592.63
+2025-02-25,United Kingdom,Amarilla,Channel Partners,40,4300.00,1378.40
+2025-02-25,United States,Montana,Channel Partners,154,3178.56,567.01
+2025-02-26,Germany,Velo,Midmarket,154,6652.80,1685.82
+2025-02-26,United Kingdom,Montana,Midmarket,175,4032.00,1044.60
+2025-02-27,Germany,Amarilla,Enterprise,56,6300.00,2345.38
+2025-02-27,Germany,VTT,Small Business,64,4892.16,1961.49
+2025-02-27,India,Montana,Channel Partners,79,1630.56,356.43
+2025-02-27,United States,Paseo,Midmarket,233,7157.76,2340.76
+2025-03-01,Canada,VTT,Government,163,11951.16,4486.13
+2025-03-02,India,Carretera,Channel Partners,131,2027.88,350.98
+2025-03-02,United Kingdom,Velo,Channel Partners,135,5224.50,812.83
+2025-03-04,Canada,Amarilla,Small Business,48,5880.00,2150.12
+2025-03-04,India,Montana,Midmarket,102,2350.08,487.81
+2025-03-05,France,Amarilla,Small Business,39,4777.50,1666.22
+2025-03-05,India,Amarilla,Government,82,9635.00,4010.33
+2025-03-05,United Kingdom,Montana,Small Business,148,3480.96,939.86
+2025-03-05,United Kingdom,Paseo,Channel Partners,143,3935.36,1239.69
+2025-03-06,France,VTT,Midmarket,120,8985.60,3377.11
+2025-03-06,United States,Carretera,Small Business,208,3669.12,921.34
+2025-03-07,France,Amarilla,Government,120,14100.00,6048.42
+2025-03-07,Germany,Amarilla,Small Business,62,7595.00,3340.49
+2025-03-07,India,Velo,Enterprise,127,5143.50,843.26
+2025-03-08,United States,Paseo,Enterprise,341,9820.80,2955.48
+2025-03-09,France,Paseo,Government,177,5324.16,1505.11
+2025-03-09,Germany,Carretera,Channel Partners,180,2786.40,751.96
+2025-03-09,Germany,Velo,Small Business,69,3042.90,625.77
+2025-03-10,United States,Carretera,Midmarket,218,3767.04,1185.14
+2025-03-12,France,Carretera,Channel Partners,183,2832.84,446.61
+2025-03-12,France,Montana,Small Business,110,2587.20,665.53
+2025-03-12,France,VTT,Government,132,9678.24,3422.01
+2025-03-13,Germany,Amarilla,Government,148,17390.00,5743.01
+2025-03-13,United Kingdom,Carretera,Midmarket,233,4026.24,1241.26
+2025-03-14,India,Montana,Channel Partners,100,2064.00,449.91
+2025-03-14,United States,Amarilla,Channel Partners,94,10105.00,2769.11
+2025-03-15,United States,Montana,Small Business,180,4233.60,796.41
+2025-03-15,United States,Velo,Channel Partners,197,7623.90,961.76
+2025-03-16,Germany,Montana,Government,238,5369.28,1033.90
+2025-03-17,Canada,Carretera,Midmarket,156,2695.68,831.04
+2025-03-17,Germany,Velo,Government,155,6556.50,1475.36
+2025-03-17,Germany,Velo,Midmarket,87,3758.40,776.09
+2025-03-17,United States,VTT,Midmarket,160,11980.80,4212.69
+2025-03-18,Canada,Velo,Midmarket,71,3067.20,527.67
+2025-03-18,France,Velo,Channel Partners,85,3289.50,350.80
+2025-03-18,India,Paseo,Small Business,77,2414.72,829.37
+2025-03-19,India,Carretera,Government,264,4466.88,1376.96
+2025-03-21,United States,Carretera,Channel Partners,258,3993.84,848.50
+2025-03-21,United States,Montana,Midmarket,229,5276.16,1330.36
+2025-03-21,United States,Velo,Small Business,123,5424.30,1231.01
+2025-03-22,France,Carretera,Enterprise,327,5297.40,1095.27
+2025-03-22,India,Montana,Government,202,4557.12,982.46
+2025-03-23,India,Montana,Small Business,111,2610.72,628.81
+2025-03-23,India,VTT,Government,77,5645.64,1689.03
+2025-03-25,Germany,Paseo,Channel Partners,113,3109.76,894.80
+2025-03-25,Germany,Paseo,Small Business,103,3230.08,1233.65
+2025-03-25,Germany,VTT,Enterprise,120,8424.00,2644.49
+2025-03-25,India,Paseo,Enterprise,156,4492.80,1512.19
+2025-03-25,India,Velo,Small Business,73,3219.30,647.20
+2025-03-25,United Kingdom,Velo,Midmarket,150,6480.00,1133.79
+2025-03-25,United States,Paseo,Government,355,10678.40,3451.51
+2025-03-26,France,Montana,Midmarket,75,1728.00,349.31
+2025-03-27,United States,Amarilla,Enterprise,142,15975.00,6084.80
+2025-03-28,United States,VTT,Enterprise,215,15093.00,4936.10
+2025-03-29,Canada,Amarilla,Enterprise,52,5850.00,1693.38
+2025-03-29,Canada,Amarilla,Midmarket,49,5880.00,2255.66
+2025-03-29,United Kingdom,VTT,Midmarket,127,9509.76,3187.32
+2025-03-30,India,Amarilla,Enterprise,89,10012.50,3383.01
+2025-03-31,Canada,VTT,Small Business,45,3439.80,1243.11
+2025-03-31,France,Paseo,Midmarket,122,3747.84,847.09
+2025-03-31,Germany,Montana,Small Business,80,1881.60,501.30
+2025-03-31,United States,Carretera,Government,319,5397.48,1397.86
+2025-04-01,United States,Paseo,Government,290,8723.20,3063.53
+2025-04-02,Germany,VTT,Government,151,11071.32,3257.74
+2025-04-03,Germany,Montana,Channel Partners,104,2146.56,459.39
+2025-04-03,United Kingdom,Velo,Enterprise,244,9882.00,1706.36
+2025-04-04,Canada,Amarilla,Small Business,52,6370.00,3145.68
+2025-04-04,Germany,Velo,Enterprise,214,8667.00,1242.06
+2025-04-05,Canada,VTT,Channel Partners,68,4561.44,1476.02
+2025-04-05,France,VTT,Midmarket,83,6215.04,2061.60
+2025-04-05,Germany,VTT,Midmarket,70,5241.60,2046.36
+2025-04-08,Germany,Montana,Enterprise,259,5594.40,1273.16
+2025-04-09,United States,Paseo,Enterprise,299,8611.20,1918.46
+2025-04-10,Germany,Velo,Midmarket,181,7819.20,1128.33
+2025-04-11,Canada,Velo,Small Business,69,3042.90,588.35
+2025-04-11,India,Carretera,Small Business,151,2663.64,669.92
+2025-04-11,United States,Amarilla,Small Business,96,11760.00,3760.39
+2025-04-12,India,Carretera,Enterprise,194,3142.80,750.96
+2025-04-12,United States,Velo,Midmarket,154,6652.80,1158.98
+2025-04-13,France,Amarilla,Enterprise,110,12375.00,4015.83
+2025-04-13,France,Carretera,Channel Partners,78,1207.44,238.48
+2025-04-14,Canada,Carretera,Enterprise,200,3240.00,896.83
+2025-04-14,United Kingdom,VTT,Enterprise,144,10108.80,3654.98
+2025-04-14,United States,Carretera,Midmarket,308,5322.24,1511.36
+2025-04-15,France,Montana,Government,241,5436.96,951.96
+2025-04-15,India,Carretera,Government,287,4856.04,1445.04
+2025-04-15,United Kingdom,Montana,Channel Partners,117,2414.88,313.03
+2025-04-15,United States,VTT,Midmarket,126,9434.88,3199.53
+2025-04-16,United Kingdom,Carretera,Channel Partners,157,2430.36,477.98
+2025-04-16,United States,Carretera,Small Business,216,3810.24,1237.77
+2025-04-17,France,Paseo,Midmarket,147,4515.84,1263.31
+2025-04-17,Germany,Carretera,Small Business,152,2681.28,600.08
+2025-04-17,United Kingdom,Carretera,Midmarket,130,2246.40,621.80
+2025-04-18,Germany,Velo,Small Business,68,2998.80,632.43
+2025-04-19,Germany,Paseo,Small Business,65,2038.40,614.79
+2025-04-19,United Kingdom,Carretera,Enterprise,346,5605.20,1495.67
+2025-04-19,United States,Carretera,Enterprise,223,3612.60,987.60
+2025-04-20,Germany,Velo,Channel Partners,124,4798.80,999.88
+2025-04-20,United Kingdom,Montana,Government,345,7783.20,1835.67
+2025-04-20,United Kingdom,Montana,Small Business,109,2563.68,684.60
+2025-04-20,United Kingdom,VTT,Midmarket,135,10108.80,2949.89
+2025-04-21,Canada,Velo,Government,130,5499.00,1237.72
+2025-04-21,India,Montana,Small Business,91,2140.32,560.00
+2025-04-21,India,Paseo,Government,203,6106.24,1827.90
+2025-04-21,United Kingdom,Paseo,Government,350,10528.00,3621.58
+2025-04-21,United States,Carretera,Government,390,6598.80,1754.84
+2025-04-22,France,Amarilla,Midmarket,78,9360.00,3644.27
+2025-04-22,India,Amarilla,Small Business,50,6125.00,2705.65
+2025-04-22,India,Velo,Midmarket,101,4363.20,891.90
+2025-04-22,United States,Montana,Midmarket,141,3248.64,935.64
+2025-04-23,India,VTT,Government,146,10704.72,3554.64
+2025-04-23,United Kingdom,Velo,Channel Partners,97,3753.90,626.01
+2025-04-23,United States,Paseo,Channel Partners,238,6549.76,1633.40
+2025-04-24,India,Amarilla,Midmarket,80,9600.00,3602.53
+2025-04-26,United Kingdom,Montana,Midmarket,173,3985.92,1128.03
+2025-04-28,United Kingdom,Amarilla,Small Business,45,5512.50,2374.78
+2025-04-28,United States,Velo,Government,312,13197.60,3632.48
+2025-04-29,Canada,Montana,Government,245,5527.20,1308.54
+2025-04-29,Canada,Paseo,Channel Partners,121,3329.92,1123.19
+2025-04-29,Canada,Paseo,Midmarket,159,4884.48,1594.42
+2025-04-29,Canada,Velo,Enterprise,174,7047.00,994.82
+2025-04-29,France,Paseo,Small Business,69,2163.84,857.13
+2025-04-29,United States,Montana,Small Business,95,2234.40,571.99
+2025-04-30,Germany,VTT,Enterprise,138,9687.60,2792.79
+2025-05-01,France,Montana,Small Business,128,3010.56,745.86
+2025-05-02,United Kingdom,VTT,Enterprise,128,8985.60,3149.46
+2025-05-02,United States,Amarilla,Enterprise,168,18900.00,6618.21
+2025-05-03,Canada,VTT,Enterprise,115,8073.00,2886.93
+2025-05-03,India,Paseo,Midmarket,121,3717.12,929.94
+2025-05-04,Canada,Amarilla,Midmarket,100,12000.00,4752.01
+2025-05-04,France,Carretera,Channel Partners,109,1687.32,376.27
+2025-05-05,Germany,VTT,Midmarket,140,10483.20,4010.32
+2025-05-05,Germany,Velo,Small Business,100,4410.00,1151.34
+2025-05-05,United Kingdom,Montana,Small Business,145,3410.40,804.43
+2025-05-06,India,Paseo,Channel Partners,128,3522.56,944.47
+2025-05-07,India,Amarilla,Midmarket,78,9360.00,3658.49
+2025-05-07,India,Paseo,Government,188,5655.04,1594.84
+2025-05-07,United Kingdom,Velo,Small Business,95,4189.50,1014.79
+2025-05-07,United States,Velo,Enterprise,224,9072.00,1398.72
+2025-05-12,Canada,Velo,Small Business,118,5203.80,831.01
+2025-05-12,United States,Paseo,Midmarket,148,4546.56,1428.97
+2025-05-12,United States,Velo,Small Business,112,4939.20,1167.39
+2025-05-13,Canada,Paseo,Government,277,8332.16,2718.74
+2025-05-13,Canada,Velo,Government,132,5583.60,1143.58
+2025-05-13,India,Paseo,Small Business,83,2602.88,877.95
+2025-05-13,United Kingdom,Amarilla,Channel Partners,72,7740.00,2610.60
+2025-05-14,Germany,Velo,Channel Partners,93,3599.10,356.90
+2025-05-15,India,VTT,Channel Partners,91,6104.28,1681.26
+2025-05-16,Canada,Carretera,Midmarket,171,2954.88,901.96
+2025-05-16,Germany,VTT,Small Business,56,4280.64,1740.94
+2025-05-17,Germany,Montana,Midmarket,245,5644.80,1498.68
+2025-05-17,India,Paseo,Enterprise,193,5558.40,1600.52
+2025-05-18,Germany,Paseo,Channel Partners,127,3495.04,695.02
+2025-05-18,India,Amarilla,Channel Partners,35,3762.50,1424.20
+2025-05-18,India,Carretera,Enterprise,145,2349.00,684.19
+2025-05-18,India,Montana,Government,239,5391.84,1043.84
+2025-05-18,India,VTT,Government,174,12757.68,4654.02
+2025-05-18,India,VTT,Small Business,62,4739.28,2053.02
+2025-05-20,India,Carretera,Channel Partners,163,2523.24,643.60
+2025-05-20,United States,Velo,Midmarket,238,10281.60,2747.82
+2025-05-21,France,Carretera,Government,225,3807.00,873.74
+2025-05-22,Canada,Paseo,Small Business,117,3669.12,1188.25
+2025-05-22,France,Velo,Midmarket,128,5529.60,1174.06
+2025-05-22,Germany,Montana,Small Business,181,4257.12,1156.74
+2025-05-22,United Kingdom,Carretera,Midmarket,169,2920.32,809.94
+2025-05-22,United States,Montana,Midmarket,300,6912.00,1552.18
+2025-05-23,Canada,Carretera,Channel Partners,123,1904.04,463.78
+2025-05-23,Canada,Velo,Enterprise,180,7290.00,1462.31
+2025-05-23,United Kingdom,Montana,Midmarket,230,5299.20,1270.34
+2025-05-24,Canada,Amarilla,Government,83,9752.50,3341.98
+2025-05-24,France,VTT,Small Business,69,5274.36,2009.17
+2025-05-24,United Kingdom,VTT,Government,204,14957.28,6047.17
+2025-05-25,India,Amarilla,Small Business,45,5512.50,2191.79
+2025-05-25,India,VTT,Midmarket,86,6439.68,2240.33
+2025-05-26,India,Amarilla,Government,112,13160.00,5441.28
+2025-05-26,India,Montana,Midmarket,157,3617.28,930.35
+2025-05-27,United Kingdom,Amarilla,Midmarket,58,6960.00,2290.67
+2025-05-28,Canada,VTT,Channel Partners,127,8519.16,2665.88
+2025-05-28,France,Montana,Government,265,5978.40,1359.87
+2025-05-28,United States,Montana,Government,388,8753.28,1930.34
+2025-05-29,France,Paseo,Small Business,95,2979.20,947.88
+2025-05-29,Germany,Paseo,Midmarket,177,5437.44,1520.01
+2025-05-30,United Kingdom,Carretera,Enterprise,344,5572.80,1194.92
+2025-05-30,United Kingdom,Velo,Government,268,11336.40,2035.02
+2025-05-31,Canada,Montana,Government,309,6971.04,1584.68
+2025-05-31,Canada,VTT,Small Business,46,3516.24,1381.43
+2025-06-01,India,Amarilla,Channel Partners,52,5590.00,2000.25
+2025-06-01,India,Paseo,Government,194,5835.52,1975.44
+2025-06-01,United States,Amarilla,Small Business,82,10045.00,4533.96
+2025-06-02,India,VTT,Small Business,89,6803.16,2551.54
+2025-06-03,Germany,VTT,Enterprise,120,8424.00,2859.95
+2025-06-03,Germany,VTT,Government,226,16570.32,6640.94
+2025-06-04,France,Paseo,Small Business,100,3136.00,873.60
+2025-06-05,France,Montana,Enterprise,242,5227.20,1200.54
+2025-06-05,United Kingdom,Paseo,Government,291,8753.28,2588.14
+2025-06-05,United States,Amarilla,Enterprise,251,28237.50,8465.47
+2025-06-05,United States,VTT,Midmarket,187,14002.56,5250.60
+2025-06-06,Canada,Amarilla,Government,116,13630.00,6415.48
+2025-06-06,Canada,Paseo,Small Business,125,3920.00,1423.38
+2025-06-06,United States,VTT,Government,187,13710.84,4937.33
+2025-06-07,France,Amarilla,Small Business,60,7350.00,2949.99
+2025-06-07,Germany,Paseo,Government,350,10528.00,2796.76
+2025-06-07,United States,Paseo,Channel Partners,212,5834.24,1611.64
+2025-06-08,Germany,Velo,Midmarket,138,5961.60,836.47
+2025-06-08,India,Montana,Government,222,5008.32,1094.34
+2025-06-08,United States,Velo,Government,357,15101.10,2602.16
+2025-06-09,Germany,Carretera,Government,249,4213.08,1094.97
+2025-06-09,United States,Carretera,Enterprise,349,5653.80,1120.40
+2025-06-10,Germany,Amarilla,Channel Partners,83,8922.50,3340.81
+2025-06-11,Canada,Carretera,Midmarket,220,3801.60,943.55
+2025-06-11,Germany,Amarilla,Enterprise,155,17437.50,6012.79
+2025-06-11,United States,Velo,Small Business,140,6174.00,1508.21
+2025-06-12,United States,Montana,Midmarket,175,4032.00,900.22
+2025-06-13,Germany,VTT,Small Business,91,6956.04,2402.18
+2025-06-14,United Kingdom,Velo,Enterprise,238,9639.00,1383.54
+2025-06-14,United States,Amarilla,Midmarket,158,18960.00,5918.29
+2025-06-15,Germany,Montana,Enterprise,405,8748.00,1118.09
+2025-06-15,India,Amarilla,Government,154,18095.00,6410.63
+2025-06-15,India,Carretera,Midmarket,182,3144.96,783.87
+2025-06-16,Canada,Montana,Government,258,5820.48,1500.37
+2025-06-16,Germany,Carretera,Small Business,142,2504.88,572.82
+2025-06-16,Germany,Montana,Channel Partners,142,2930.88,576.08
+2025-06-17,United Kingdom,Montana,Midmarket,279,6428.16,1773.00
+2025-06-17,United Kingdom,VTT,Small Business,80,6115.20,2277.73
+2025-06-18,Germany,Montana,Midmarket,133,3064.32,652.65
+2025-06-18,United Kingdom,Paseo,Midmarket,168,5160.96,1582.44
+2025-06-19,Canada,Amarilla,Small Business,76,9310.00,3386.92
+2025-06-19,Canada,Montana,Enterprise,324,6998.40,1050.73
+2025-06-19,France,Carretera,Government,309,5228.28,1260.97
+2025-06-21,Canada,Amarilla,Enterprise,135,15187.50,5093.18
+2025-06-21,Germany,Montana,Government,351,7918.56,1929.21
+2025-06-21,United Kingdom,Amarilla,Small Business,77,9432.50,3575.76
+2025-06-21,United States,Carretera,Channel Partners,272,4210.56,866.87
+2025-06-22,France,Montana,Midmarket,265,6105.60,1958.96
+2025-06-22,Germany,Paseo,Small Business,126,3951.36,1265.13
+2025-06-22,India,Velo,Enterprise,189,7654.50,946.83
+2025-06-23,Canada,Velo,Government,183,7740.90,1414.68
+2025-06-23,United Kingdom,Carretera,Channel Partners,258,3993.84,713.72
+2025-06-23,United States,Paseo,Small Business,168,5268.48,1730.33
+2025-06-24,United Kingdom,VTT,Government,266,19503.12,6970.06
+2025-06-26,United Kingdom,Velo,Small Business,150,6615.00,1544.53
+2025-06-27,United Kingdom,Amarilla,Enterprise,140,15750.00,5291.22
+2025-06-27,United Kingdom,Carretera,Small Business,180,3175.20,1001.63
+2025-06-27,United Kingdom,VTT,Midmarket,124,9285.12,2820.34
+2025-06-28,Canada,Carretera,Channel Partners,114,1764.72,455.31
+2025-06-29,Germany,Amarilla,Small Business,67,8207.50,3447.67
+2025-06-30,India,Velo,Government,214,9052.20,1738.25
+2025-06-30,United Kingdom,Amarilla,Government,101,11867.50,4736.66
+2025-07-01,France,VTT,Small Business,53,4051.32,1439.40
+2025-07-01,Germany,VTT,Government,150,10998.00,3753.61
+2025-07-01,Germany,VTT,Small Business,63,4815.72,1979.28
+2025-07-01,United Kingdom,Paseo,Small Business,96,3010.56,1071.15
+2025-07-01,United States,VTT,Midmarket,115,8611.20,3513.41
+2025-07-02,India,Montana,Channel Partners,136,2807.04,530.80
+2025-07-03,India,Montana,Enterprise,162,3499.20,759.13
+2025-07-03,United Kingdom,Carretera,Enterprise,203,3288.60,784.60
+2025-07-04,France,Amarilla,Midmarket,60,7200.00,2440.20
+2025-07-04,United Kingdom,Montana,Small Business,146,3433.92,943.55
+2025-07-06,France,Montana,Government,171,3857.76,752.77
+2025-07-07,Canada,VTT,Midmarket,107,8012.16,3081.54
+2025-07-07,Germany,Carretera,Enterprise,227,3677.40,831.91
+2025-07-08,Germany,VTT,Enterprise,136,9547.20,3731.87
+2025-07-08,India,VTT,Small Business,70,5350.80,2077.24
+2025-07-08,United Kingdom,Velo,Enterprise,115,4657.50,844.97
+2025-07-09,Canada,Paseo,Small Business,115,3606.40,1324.77
+2025-07-09,France,Velo,Midmarket,143,6177.60,1205.80
+2025-07-09,United Kingdom,Paseo,Midmarket,190,5836.80,1954.48
+2025-07-09,United Kingdom,VTT,Small Business,79,6038.76,2489.19
+2025-07-10,Canada,Paseo,Enterprise,261,7516.80,2121.83
+2025-07-10,Germany,Carretera,Midmarket,203,3507.84,927.68
+2025-07-10,India,Paseo,Midmarket,107,3287.04,1059.29
+2025-07-10,United Kingdom,Montana,Government,178,4015.68,889.24
+2025-07-11,Canada,Amarilla,Small Business,47,5757.50,2119.73
+2025-07-11,France,VTT,Enterprise,105,7371.00,2508.76
+2025-07-11,Germany,Amarilla,Channel Partners,83,8922.50,2575.79
+2025-07-11,Germany,Paseo,Midmarket,146,4485.12,1468.41
+2025-07-11,United States,Velo,Small Business,94,4145.40,715.95
+2025-07-12,Germany,Paseo,Channel Partners,112,3082.24,771.83
+2025-07-12,India,Paseo,Channel Partners,42,1155.84,252.72
+2025-07-15,Germany,Montana,Midmarket,173,3985.92,1112.75
+2025-07-16,Germany,Amarilla,Small Business,65,7962.50,2893.95
+2025-07-17,Canada,Carretera,Enterprise,259,4195.80,1194.79
+2025-07-17,India,Amarilla,Government,79,9282.50,3712.52
+2025-07-17,India,Montana,Midmarket,134,3087.36,826.08
+2025-07-17,United States,Paseo,Small Business,121,3794.56,1158.69
+2025-07-18,India,Paseo,Government,125,3760.00,1254.88
+2025-07-18,United States,Amarilla,Government,141,16567.50,6089.64
+2025-07-19,France,Carretera,Channel Partners,129,1996.92,493.63
+2025-07-19,United States,Velo,Enterprise,200,8100.00,1595.41
+2025-07-20,Canada,Carretera,Channel Partners,162,2507.76,611.99
+2025-07-20,Canada,Carretera,Small Business,132,2328.48,739.14
+2025-07-20,France,Velo,Enterprise,131,5305.50,821.22
+2025-07-20,India,Amarilla,Small Business,42,5145.00,1888.08
+2025-07-21,Germany,Montana,Government,277,6249.12,1251.27
+2025-07-21,United States,VTT,Enterprise,237,16637.40,5721.55
+2025-07-22,Germany,Velo,Enterprise,177,7168.50,1196.67
+2025-07-23,United Kingdom,Amarilla,Channel Partners,61,6557.50,2005.15
+2025-07-24,Canada,Montana,Enterprise,268,5788.80,998.80
+2025-07-24,Germany,Velo,Small Business,76,3351.60,678.91
+2025-07-24,United States,Montana,Enterprise,429,9266.40,2544.53
+2025-07-25,United Kingdom,VTT,Channel Partners,46,3085.68,915.38
+2025-07-25,United States,Amarilla,Small Business,69,8452.50,3832.25
+2025-07-26,Canada,Carretera,Midmarket,161,2782.08,863.76
+2025-07-26,Canada,Montana,Small Business,133,3128.16,802.57
+2025-07-26,Canada,Paseo,Channel Partners,75,2064.00,616.97
+2025-07-28,India,Velo,Small Business,52,2293.20,496.77
+2025-07-29,Germany,Paseo,Small Business,155,4860.80,1282.50
+2025-07-29,India,VTT,Channel Partners,57,3823.56,1331.29
+2025-07-30,France,Paseo,Enterprise,129,3715.20,1097.82
+2025-07-30,Germany,Amarilla,Midmarket,67,8040.00,3209.84
+2025-08-01,United States,Montana,Enterprise,260,5616.00,1201.67
+2025-08-03,Canada,Montana,Government,171,3857.76,1026.00
+2025-08-03,Germany,Montana,Small Business,146,3433.92,756.41
+2025-08-03,India,Amarilla,Enterprise,69,7762.50,2497.14
+2025-08-03,India,Paseo,Channel Partners,111,3054.72,646.60
+2025-08-04,Canada,Paseo,Midmarket,144,4423.68,1279.16
+2025-08-04,India,Paseo,Government,180,5414.40,1825.65
+2025-08-06,France,Amarilla,Small Business,46,5635.00,2347.35
+2025-08-06,India,Montana,Small Business,35,823.20,215.08
+2025-08-07,France,Carretera,Government,272,4602.24,1431.12
+2025-08-07,France,VTT,Enterprise,140,9828.00,3162.74
+2025-08-07,India,Velo,Small Business,64,2822.40,633.12
+2025-08-08,United Kingdom,Velo,Channel Partners,139,5379.30,491.25
+2025-08-08,United States,Paseo,Enterprise,170,4896.00,1410.13
+2025-08-09,India,VTT,Government,83,6085.56,2298.83
+2025-08-10,Canada,Paseo,Small Business,70,2195.20,820.00
+2025-08-10,United Kingdom,Amarilla,Government,132,15510.00,5955.25
+2025-08-10,United Kingdom,Montana,Enterprise,195,4212.00,890.80
+2025-08-10,United States,Velo,Government,251,10617.30,2124.45
+2025-08-11,Canada,Velo,Small Business,87,3836.70,815.00
+2025-08-11,India,Carretera,Government,216,3654.72,1020.15
+2025-08-11,United Kingdom,Amarilla,Midmarket,77,9240.00,3402.47
+2025-08-12,Canada,Carretera,Small Business,110,1940.40,527.76
+2025-08-12,Germany,Paseo,Small Business,116,3637.76,1174.96
+2025-08-12,Germany,VTT,Midmarket,92,6888.96,1981.06
+2025-08-12,Germany,VTT,Small Business,90,6879.60,2474.69
+2025-08-13,United Kingdom,Amarilla,Channel Partners,92,9890.00,3006.46
+2025-08-13,United Kingdom,Amarilla,Enterprise,146,16425.00,6026.28
+2025-08-13,United Kingdom,Paseo,Government,223,6707.84,1996.00
+2025-08-14,France,VTT,Midmarket,67,5016.96,1741.38
+2025-08-15,Canada,Paseo,Government,191,5745.28,1827.62
+2025-08-15,India,Velo,Channel Partners,75,2902.50,444.78
+2025-08-15,United Kingdom,VTT,Government,154,11291.28,3717.29
+2025-08-15,United Kingdom,Velo,Small Business,99,4365.90,705.57
+2025-08-15,United States,Carretera,Midmarket,339,5857.92,1478.36
+2025-08-16,United States,Carretera,Channel Partners,218,3374.64,854.61
+2025-08-16,United States,Montana,Midmarket,287,6612.48,1815.42
+2025-08-17,Germany,Amarilla,Midmarket,108,12960.00,4407.97
+2025-08-18,Canada,Velo,Channel Partners,66,2554.20,444.25
+2025-08-18,United States,Amarilla,Channel Partners,109,11717.50,4144.04
+2025-08-20,India,Carretera,Channel Partners,136,2105.28,382.92
+2025-08-21,Canada,Montana,Midmarket,175,4032.00,1129.72
+2025-08-21,France,Paseo,Government,207,6226.56,1823.99
+2025-08-22,France,Paseo,Enterprise,223,6422.40,1721.46
+2025-08-22,Germany,Paseo,Enterprise,316,9100.80,2506.26
+2025-08-22,India,VTT,Midmarket,62,4642.56,1237.02
+2025-08-23,United Kingdom,Paseo,Enterprise,203,5846.40,1897.32
+2025-08-24,United States,VTT,Midmarket,147,11007.36,4202.42
+2025-08-25,France,Velo,Government,161,6810.30,1161.47
+2025-08-26,Canada,VTT,Small Business,59,4509.96,1502.93
+2025-08-26,United States,Amarilla,Midmarket,76,9120.00,3498.83
+2025-08-27,United Kingdom,Carretera,Small Business,127,2240.28,662.80
+2025-08-27,United Kingdom,Velo,Midmarket,113,4881.60,1071.44
+2025-08-28,France,VTT,Small Business,51,3898.44,1425.94
+2025-08-28,United States,VTT,Channel Partners,161,10799.88,3081.60
+2025-08-30,Canada,Amarilla,Enterprise,130,14625.00,5317.61
+2025-08-30,France,Amarilla,Channel Partners,45,4837.50,1608.70
+2025-08-30,France,Paseo,Channel Partners,89,2449.28,658.90
+2025-08-30,Germany,Amarilla,Small Business,31,3797.50,1750.32
+2025-08-31,Canada,Velo,Enterprise,151,6115.50,1301.63
+2025-08-31,France,Velo,Small Business,90,3969.00,782.72
+2025-08-31,India,Amarilla,Midmarket,54,6480.00,2239.88
+2025-09-01,India,VTT,Small Business,50,3822.00,1357.05
+2025-09-02,Germany,Paseo,Government,214,6437.12,2087.77
+2025-09-02,United Kingdom,Carretera,Enterprise,350,5670.00,1209.74
+2025-09-02,United States,Amarilla,Channel Partners,85,9137.50,2532.27
+2025-09-03,United States,Montana,Government,410,9249.60,2187.58
+2025-09-04,Germany,VTT,Midmarket,91,6814.08,2553.71
+2025-09-05,Germany,Carretera,Enterprise,351,5686.20,1538.28
+2025-09-06,Canada,Velo,Midmarket,150,6480.00,994.13
+2025-09-06,India,VTT,Midmarket,55,4118.40,1649.79
+2025-09-06,India,Velo,Small Business,84,3704.40,779.37
+2025-09-06,United Kingdom,Paseo,Channel Partners,187,5146.24,1148.05
+2025-09-06,United Kingdom,Velo,Government,170,7191.00,1639.12
+2025-09-06,United States,Montana,Enterprise,344,7430.40,1445.72
+2025-09-07,Canada,Paseo,Enterprise,174,5011.20,1792.60
+2025-09-07,India,Paseo,Government,201,6046.08,1572.87
+2025-09-08,Germany,Velo,Government,143,6048.90,1304.13
+2025-09-08,United Kingdom,Amarilla,Small Business,76,9310.00,4303.43
+2025-09-09,Canada,Paseo,Government,317,9535.36,3243.82
+2025-09-09,France,Velo,Midmarket,128,5529.60,906.64
+2025-09-09,Germany,Velo,Enterprise,263,10651.50,2151.20
+2025-09-09,Germany,Velo,Midmarket,188,8121.60,1401.94
+2025-09-10,Germany,Montana,Enterprise,209,4514.40,1095.21
+2025-09-10,Germany,VTT,Enterprise,176,12355.20,4908.85
+2025-09-10,United Kingdom,Velo,Midmarket,178,7689.60,1723.05
+2025-09-11,France,VTT,Small Business,106,8102.64,3444.46
+2025-09-11,Germany,VTT,Channel Partners,105,7043.40,2609.97
+2025-09-13,United Kingdom,Amarilla,Government,134,15745.00,6456.89
+2025-09-13,United States,Montana,Small Business,110,2587.20,756.84
+2025-09-13,United States,VTT,Enterprise,203,14250.60,4085.25
+2025-09-14,United Kingdom,Carretera,Midmarket,233,4026.24,1069.64
+2025-09-15,Germany,Montana,Small Business,133,3128.16,776.38
+2025-09-15,United Kingdom,Velo,Enterprise,229,9274.50,1889.17
+2025-09-16,France,Paseo,Enterprise,205,5904.00,1914.14
+2025-09-16,India,Montana,Enterprise,148,3196.80,770.46
+2025-09-17,France,Montana,Channel Partners,112,2311.68,558.81
+2025-09-17,France,Velo,Small Business,98,4321.80,792.51
+2025-09-17,Germany,Velo,Channel Partners,128,4953.60,842.79
+2025-09-18,Canada,Amarilla,Small Business,37,4532.50,1859.04
+2025-09-18,United States,Carretera,Government,269,4551.48,865.57
+2025-09-18,United States,VTT,Government,206,15103.92,5808.23
+2025-09-19,Canada,Velo,Government,274,11590.20,2109.75
+2025-09-19,India,Carretera,Enterprise,250,4050.00,914.68
+2025-09-19,India,Velo,Enterprise,99,4009.50,444.21
+2025-09-20,France,VTT,Government,154,11291.28,4328.09
+2025-09-20,United Kingdom,Amarilla,Midmarket,113,13560.00,4772.54
+2025-09-20,United Kingdom,VTT,Enterprise,143,10038.60,3062.29
+2025-09-20,United States,Velo,Channel Partners,155,5998.50,910.12
+2025-09-21,Germany,Amarilla,Midmarket,85,10200.00,4486.36
+2025-09-21,India,Amarilla,Government,77,9047.50,3757.23
+2025-09-21,India,VTT,Channel Partners,59,3957.72,1095.62
+2025-09-22,United Kingdom,Carretera,Government,409,6920.28,1585.33
+2025-09-22,United Kingdom,Velo,Channel Partners,95,3676.50,631.47
+2025-09-24,Germany,Carretera,Small Business,176,3104.64,1046.81
+2025-09-25,France,Montana,Midmarket,149,3432.96,884.04
+2025-09-26,Germany,Carretera,Channel Partners,203,3142.44,606.01
+2025-09-26,United Kingdom,Amarilla,Enterprise,149,16762.50,5883.30
+2025-09-27,Germany,Amarilla,Channel Partners,76,8170.00,2714.54
+2025-09-27,Germany,Amarilla,Small Business,75,9187.50,3266.77
+2025-09-27,United States,Carretera,Small Business,294,5186.16,1164.42
+2025-09-27,United States,VTT,Midmarket,175,13104.00,4540.62
+2025-09-30,Canada,Montana,Government,221,4985.76,1455.44
+2025-09-30,United Kingdom,Montana,Enterprise,332,7171.20,1562.58
+2025-10-01,United Kingdom,Montana,Government,386,8708.16,2263.65
+2025-10-01,United Kingdom,Velo,Small Business,117,5159.70,1268.62
+2025-10-01,United States,Velo,Small Business,181,7982.10,1815.34
+2025-10-02,Canada,Amarilla,Enterprise,159,17887.50,6012.21
+2025-10-02,Canada,VTT,Government,214,15690.48,5172.12
+2025-10-02,France,Amarilla,Small Business,66,8085.00,2559.09
+2025-10-02,United Kingdom,Amarilla,Government,177,20797.50,7974.07
+2025-10-04,Germany,Amarilla,Enterprise,85,9562.50,2956.41
+2025-10-05,Canada,VTT,Small Business,55,4204.20,1575.07
+2025-10-05,United States,Carretera,Enterprise,626,10141.20,2478.58
+2025-10-06,France,Velo,Government,165,6979.50,1167.04
+2025-10-06,United States,Velo,Channel Partners,145,5611.50,753.48
+2025-10-07,Canada,Montana,Midmarket,180,4147.20,1040.02
+2025-10-08,France,Carretera,Midmarket,274,4734.72,1435.78
+2025-10-08,United States,VTT,Enterprise,263,18462.60,6987.40
+2025-10-10,France,Montana,Government,327,7377.12,1491.10
+2025-10-11,Germany,Paseo,Channel Partners,170,4678.40,1002.52
+2025-10-11,India,Velo,Midmarket,122,5270.40,877.30
+2025-10-11,United States,Carretera,Government,681,11522.52,2914.07
+2025-10-13,France,Paseo,Channel Partners,120,3302.40,902.42
+2025-10-13,Germany,Montana,Government,221,4985.76,1490.40
+2025-10-13,Germany,Paseo,Enterprise,319,9187.20,2581.29
+2025-10-14,Canada,Montana,Small Business,153,3598.56,1022.69
+2025-10-14,India,Carretera,Midmarket,187,3231.36,978.39
+2025-10-14,India,VTT,Midmarket,84,6289.92,2404.20
+2025-10-14,United Kingdom,VTT,Government,205,15030.60,4558.75
+2025-10-14,United States,Montana,Channel Partners,232,4788.48,540.27
+2025-10-16,France,Velo,Small Business,93,4101.30,952.63
+2025-10-16,Germany,Carretera,Government,381,6446.52,1856.28
+2025-10-16,Germany,Paseo,Small Business,141,4421.76,1536.30
+2025-10-16,India,Montana,Small Business,74,1740.48,493.84
+2025-10-16,India,VTT,Small Business,77,5885.88,2572.41
+2025-10-16,United Kingdom,Amarilla,Midmarket,104,12480.00,4464.77
+2025-10-17,United Kingdom,Paseo,Channel Partners,179,4926.08,943.42
+2025-10-17,United Kingdom,Velo,Channel Partners,152,5882.40,980.22
+2025-10-18,Germany,Amarilla,Midmarket,118,14160.00,5564.46
+2025-10-18,Germany,Paseo,Government,195,5865.60,1908.49
+2025-10-18,India,Montana,Enterprise,275,5940.00,1589.06
+2025-10-19,Canada,VTT,Enterprise,109,7651.80,2289.47
+2025-10-21,Canada,Velo,Enterprise,147,5953.50,912.81
+2025-10-21,Germany,Velo,Midmarket,144,6220.80,782.48
+2025-10-21,United States,Montana,Enterprise,366,7905.60,1619.21
+2025-10-22,Germany,Velo,Small Business,60,2646.00,460.16
+2025-10-23,India,Paseo,Channel Partners,115,3164.80,1049.36
+2025-10-23,United Kingdom,Paseo,Government,195,5865.60,1397.67
+2025-10-24,France,VTT,Government,221,16203.72,5316.97
+2025-10-24,India,Montana,Channel Partners,137,2827.68,471.48
+2025-10-25,France,VTT,Midmarket,99,7413.12,2297.66
+2025-10-25,United Kingdom,Carretera,Enterprise,279,4519.80,1030.06
+2025-10-25,United States,Velo,Enterprise,372,15066.00,2208.71
+2025-10-26,Germany,Montana,Enterprise,400,8640.00,1684.27
+2025-10-26,United Kingdom,Carretera,Small Business,132,2328.48,565.83
+2025-10-26,United Kingdom,VTT,Enterprise,148,10389.60,2967.04
+2025-10-27,France,VTT,Channel Partners,100,6708.00,2012.55
+2025-10-27,Germany,Montana,Channel Partners,199,4107.36,788.46
+2025-10-28,United States,Amarilla,Channel Partners,127,13652.50,4819.25
+2025-10-29,Canada,Velo,Channel Partners,118,4566.60,828.47
+2025-10-29,United States,Paseo,Midmarket,177,5437.44,1831.41
+2025-10-30,United Kingdom,Montana,Enterprise,243,5248.80,923.39
+2025-10-30,United States,Carretera,Midmarket,373,6445.44,1718.63
+2025-10-31,France,Amarilla,Government,145,17037.50,6424.55
+2025-10-31,France,Carretera,Small Business,193,3404.52,967.31
+2025-11-01,India,Paseo,Midmarket,157,4823.04,1261.57
+2025-11-01,India,Velo,Small Business,94,4145.40,948.98
+2025-11-01,United Kingdom,Montana,Midmarket,289,6658.56,1893.29
+2025-11-03,United States,Montana,Enterprise,331,7149.60,1727.53
+2025-11-04,United States,Amarilla,Enterprise,259,29137.50,12036.43
+2025-11-05,Germany,Montana,Channel Partners,215,4437.60,623.32
+2025-11-07,Canada,Amarilla,Enterprise,160,18000.00,6451.46
+2025-11-07,Germany,Montana,Government,521,11753.76,3045.37
+2025-11-07,United Kingdom,Amarilla,Midmarket,152,18240.00,7501.40
+2025-11-08,Canada,VTT,Small Business,52,3974.88,1223.73
+2025-11-08,France,Montana,Enterprise,218,4708.80,850.95
+2025-11-09,Canada,VTT,Government,220,16130.40,5522.53
+2025-11-09,United Kingdom,Montana,Small Business,152,3575.04,1097.02
+2025-11-09,United States,Amarilla,Channel Partners,136,14620.00,5034.30
+2025-11-09,United States,Carretera,Channel Partners,315,4876.20,1018.91
+2025-11-10,United States,Montana,Government,506,11415.36,2534.94
+2025-11-11,Canada,Montana,Midmarket,220,5068.80,1243.02
+2025-11-11,United Kingdom,Carretera,Channel Partners,211,3266.28,1024.68
+2025-11-12,France,Amarilla,Small Business,49,6002.50,2086.10
+2025-11-12,Germany,Paseo,Small Business,96,3010.56,1116.41
+2025-11-12,United Kingdom,Amarilla,Government,230,27025.00,12409.17
+2025-11-13,France,Paseo,Government,245,7369.60,2293.17
+2025-11-13,India,Carretera,Enterprise,423,6852.60,2047.71
+2025-11-14,India,Paseo,Enterprise,235,6768.00,1740.41
+2025-11-15,United States,Paseo,Small Business,209,6554.24,2704.70
+2025-11-15,United States,Velo,Enterprise,349,14134.50,2069.24
+2025-11-16,Germany,Velo,Channel Partners,198,7662.60,658.95
+2025-11-17,Canada,Velo,Enterprise,128,5184.00,978.14
+2025-11-17,France,Carretera,Enterprise,451,7306.20,1988.73
+2025-11-17,France,VTT,Enterprise,143,10038.60,3660.39
+2025-11-17,France,VTT,Midmarket,158,11831.04,4421.47
+2025-11-17,Germany,Montana,Enterprise,301,6501.60,1586.60
+2025-11-17,Germany,Montana,Small Business,98,2304.96,605.36
+2025-11-18,Germany,Paseo,Government,410,12332.80,3874.22
+2025-11-18,United States,VTT,Channel Partners,185,12409.80,4419.66
+2025-11-19,Germany,Amarilla,Enterprise,121,13612.50,3952.70
+2025-11-19,United Kingdom,Carretera,Government,409,6920.28,1932.45
+2025-11-20,United Kingdom,Velo,Small Business,139,6129.90,1269.07
+2025-11-21,France,Velo,Channel Partners,154,5959.80,815.73
+2025-11-21,India,VTT,Enterprise,139,9757.80,2822.01
+2025-11-22,Canada,Velo,Small Business,125,5512.50,1016.67
+2025-11-22,Germany,Velo,Enterprise,237,9598.50,1145.76
+2025-11-23,India,Amarilla,Enterprise,113,12712.50,4693.05
+2025-11-23,India,VTT,Government,205,15030.60,4647.15
+2025-11-24,France,Carretera,Channel Partners,209,3235.32,711.41
+2025-11-25,Canada,Carretera,Channel Partners,144,2229.12,469.55
+2025-11-25,Germany,Amarilla,Small Business,88,10780.00,4305.68
+2025-11-25,United Kingdom,VTT,Enterprise,211,14812.20,4980.67
+2025-11-26,Germany,Paseo,Midmarket,228,7004.16,2047.61
+2025-11-26,India,Amarilla,Channel Partners,72,7740.00,2770.17
+2025-11-26,India,Montana,Government,224,5053.44,1460.20
+2025-11-26,United Kingdom,Montana,Enterprise,452,9763.20,2389.93
+2025-11-26,United States,Velo,Channel Partners,181,7004.70,1267.68
+2025-11-27,India,Velo,Midmarket,134,5788.80,1458.30
+2025-11-28,India,VTT,Channel Partners,128,8586.24,2432.44
+2025-11-28,United Kingdom,Paseo,Channel Partners,133,3660.16,839.72
+2025-11-29,India,VTT,Midmarket,113,8461.44,3687.56
+2025-11-29,United Kingdom,Amarilla,Enterprise,136,15300.00,5797.94
+2025-11-29,United Kingdom,VTT,Government,285,20896.20,6707.18
+2025-11-29,United States,Paseo,Channel Partners,170,4678.40,1465.50
+2025-11-30,India,Paseo,Small Business,118,3700.48,1099.45
+2025-11-30,United States,Carretera,Midmarket,376,6497.28,1347.91
+2025-12-01,Canada,VTT,Enterprise,177,12425.40,3815.24
+2025-12-01,United States,Velo,Government,344,14551.20,2965.29
+2025-12-02,France,Amarilla,Midmarket,127,15240.00,5674.22
+2025-12-03,France,Carretera,Midmarket,192,3317.76,823.39
+2025-12-04,United States,Velo,Channel Partners,37,1431.90,250.18
+2025-12-05,Canada,Paseo,Small Business,187,5864.32,1736.19
+2025-12-05,United Kingdom,VTT,Enterprise,228,16005.60,5613.22
+2025-12-05,United States,Carretera,Channel Partners,273,4226.04,713.12
+2025-12-06,Canada,Paseo,Midmarket,203,6236.16,2163.58
+2025-12-06,France,Paseo,Small Business,134,4202.24,1315.20
+2025-12-06,India,Paseo,Channel Partners,140,3852.80,978.98
+2025-12-07,Canada,Carretera,Midmarket,294,5080.32,1403.15
+2025-12-07,India,Paseo,Government,326,9806.08,3222.39
+2025-12-08,Germany,Carretera,Channel Partners,157,2430.36,528.71
+2025-12-09,Germany,Carretera,Small Business,237,4180.68,1016.28
+2025-12-10,India,Velo,Channel Partners,111,4295.70,735.96
+2025-12-11,Canada,Amarilla,Government,262,30785.00,11148.14
+2025-12-11,Canada,Amarilla,Small Business,70,8575.00,3375.14
+2025-12-12,Canada,Amarilla,Enterprise,166,18675.00,5662.64
+2025-12-12,France,VTT,Channel Partners,137,9189.96,2643.80
+2025-12-12,Germany,Velo,Channel Partners,186,7198.20,671.79
+2025-12-12,India,Montana,Enterprise,291,6285.60,1341.17
+2025-12-13,Canada,Montana,Small Business,159,3739.68,1062.28
+2025-12-13,Canada,Velo,Channel Partners,122,4721.40,484.46
+2025-12-13,Germany,Amarilla,Government,154,18095.00,6652.28
+2025-12-15,Canada,Carretera,Channel Partners,272,4210.56,1120.27
+2025-12-16,Germany,Velo,Enterprise,348,14094.00,2210.72
+2025-12-16,India,VTT,Enterprise,168,11793.60,2999.80
+2025-12-16,United Kingdom,VTT,Channel Partners,106,7110.48,2109.36
+2025-12-17,Canada,Velo,Midmarket,208,8985.60,1927.61
+2025-12-17,France,Montana,Enterprise,387,8359.20,1893.46
+2025-12-17,France,VTT,Midmarket,155,11606.40,3937.54
+2025-12-17,United States,Montana,Small Business,252,5927.04,1716.24
+2025-12-17,United States,Paseo,Channel Partners,287,7898.24,2245.20
+2025-12-18,France,VTT,Small Business,119,9096.36,3022.20
+2025-12-18,India,Velo,Midmarket,190,8208.00,1604.40
+2025-12-19,Canada,Paseo,Enterprise,181,5212.80,1263.44
+2025-12-19,France,Velo,Government,303,12816.90,2617.77
+2025-12-19,Germany,Montana,Government,423,9542.88,2429.27
+2025-12-19,India,Velo,Small Business,112,4939.20,1053.16
+2025-12-20,Germany,VTT,Channel Partners,106,7110.48,1876.41
+2025-12-20,India,Amarilla,Channel Partners,80,8600.00,2490.54
+2025-12-21,Canada,Velo,Enterprise,203,8221.50,1750.11
+2025-12-22,United Kingdom,Amarilla,Government,173,20327.50,7390.23
+2025-12-22,United States,Amarilla,Channel Partners,139,14942.50,4808.85
+2025-12-23,Germany,Montana,Channel Partners,191,3942.24,763.75
+2025-12-24,France,Carretera,Government,439,7427.88,2085.76
+2025-12-24,France,Paseo,Government,384,11550.72,4851.79
+2025-12-25,Canada,Carretera,Small Business,227,4004.28,1189.42
+2025-12-25,Canada,VTT,Small Business,110,8408.40,2883.17
+2025-12-25,India,Amarilla,Government,131,15392.50,6262.03
+2025-12-25,India,Paseo,Enterprise,171,4924.80,1424.80
+2025-12-25,United States,Amarilla,Government,350,41125.00,16663.89
+2025-12-26,Germany,Paseo,Enterprise,294,8467.20,1879.52
+2025-12-28,India,Carretera,Enterprise,278,4503.60,1053.18
+2025-12-29,United Kingdom,Paseo,Enterprise,386,11116.80,3248.42
+2025-12-30,Canada,Paseo,Channel Partners,222,6109.44,1898.65
+2025-12-30,Germany,Montana,Small Business,171,4021.92,826.62
+2025-12-30,India,Montana,Government,292,6587.52,1464.28
+2025-12-30,United Kingdom,VTT,Small Business,119,9096.36,3251.14
+2025-12-31,India,Amarilla,Small Business,84,10290.00,4528.77
+2025-12-31,India,VTT,Channel Partners,108,7244.64,2330.76

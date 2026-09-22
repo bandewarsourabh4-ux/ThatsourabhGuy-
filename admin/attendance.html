@@ -5,6 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendance Management - Admin</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            padding: 24px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .attendance-item {
+            padding: 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            background: var(--surface);
+            transition: var(--transition);
+        }
+
+        .attendance-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .attendance-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .attendance-subject {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .attendance-percentage {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .attendance-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .attendance-stat {
+            text-align: center;
+            padding: 8px;
+            background: var(--surface-secondary);
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        .attendance-stat-value {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--primary);
+        }
+
+        .attendance-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--surface-secondary);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .attendance-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s ease;
+        }
+
+        .attendance-warning {
+            padding: 8px 12px;
+            background: #fecaca;
+            color: #dc2626;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        .attendance-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .filter-container {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .filter-container input {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 32px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .modal-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .form-input {
+            width: 100%;
+        }
+
+        .modal-footer {
+            display: flex;
+            gap: 12px;
+            margin-top: 28px;
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 768px) {
+            .attendance-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="app-wrapper">
@@ -33,19 +231,28 @@
             </header>
 
             <div class="content-area">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
-                    <div class="card" style="padding: 16px; text-align: center;">
-                        <div style="font-size: 28px; font-weight: 700; color: var(--primary);">88%</div>
-                        <div style="color: var(--text-secondary); font-size: 14px;">Overall Attendance</div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="overallAttendance">88%</div>
+                        <div class="stat-label">Overall Attendance</div>
                     </div>
-                    <div class="card" style="padding: 16px; text-align: center;">
-                        <div style="font-size: 28px; font-weight: 700; color: var(--primary);">156</div>
-                        <div style="color: var(--text-secondary); font-size: 14px;">Total Students</div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalStudents">156</div>
+                        <div class="stat-label">Total Students</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="criticalCount">12</div>
+                        <div class="stat-label">Critical Attendance</div>
                     </div>
                 </div>
 
+                <div class="filter-container">
+                    <input type="text" id="searchInput" class="form-input" placeholder="Search by subject..." onkeyup="filterAttendance()">
+                    <button class="btn" onclick="exportReport()">📥 Export Report</button>
+                </div>
+
                 <div class="card">
-                    <div class="card-header"><h3>Subject-wise Attendance</h3></div>
+                    <div class="card-header"><h3>Subject-wise Attendance Details</h3></div>
                     <div class="card-body">
                         <div id="attendanceList"></div>
                     </div>
@@ -54,26 +261,166 @@
         </main>
     </div>
 
+    <div id="updateModal" class="modal" onclick="closeModalOnBackdrop(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <span>Update Attendance</span>
+                <button class="modal-close" onclick="ModalManager.closeModal('updateModal')">&times;</button>
+            </div>
+            <form onsubmit="saveAttendance(event)">
+                <div class="form-group">
+                    <label class="form-label">Subject</label>
+                    <input type="text" id="updateSubject" class="form-input" readonly>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Total Classes</label>
+                    <input type="number" id="updateTotal" class="form-input" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Present</label>
+                    <input type="number" id="updatePresent" class="form-input" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Absent</label>
+                    <input type="number" id="updateAbsent" class="form-input" min="0" readonly>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn secondary" onclick="ModalManager.closeModal('updateModal')">Cancel</button>
+                    <button type="submit" class="btn">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="../js/app.js"></script>
     <script>
+        let attendanceData = [];
+        let filteredAttendance = [];
+        let editingSubject = null;
+
         document.addEventListener('DOMContentLoaded', function() {
             if (!app.checkAuth() || !app.isAdmin()) window.location.href = '../index.html';
+            attendanceData = SmartHubData.getAttendance();
+            filteredAttendance = [...attendanceData];
             displayAttendance();
         });
 
         function displayAttendance() {
-            const data = SmartHubData.getAttendance();
             const container = document.getElementById('attendanceList');
-            container.innerHTML = data.map(att => `
-                <div style="padding: 12px 0; border-bottom: 1px solid var(--border);">
-                    <div style="font-weight: 600; margin-bottom: 8px;">
-                        ${att.subject} - ${att.percentage}%
+
+            container.innerHTML = filteredAttendance.map(att => {
+                const attendancePercent = Math.round((att.present / att.total) * 100);
+                const isCritical = attendancePercent < 75;
+
+                return `
+                    <div class="attendance-item">
+                        <div class="attendance-header">
+                            <span class="attendance-subject">${att.subject}</span>
+                            <span class="attendance-percentage">${attendancePercent}%</span>
+                        </div>
+                        <div class="attendance-stats">
+                            <div class="attendance-stat">
+                                <div style="color: var(--text-secondary); font-size: 12px;">Present</div>
+                                <div class="attendance-stat-value" style="color: var(--success);">${att.present}</div>
+                            </div>
+                            <div class="attendance-stat">
+                                <div style="color: var(--text-secondary); font-size: 12px;">Absent</div>
+                                <div class="attendance-stat-value" style="color: var(--danger);">${att.absent}</div>
+                            </div>
+                            <div class="attendance-stat">
+                                <div style="color: var(--text-secondary); font-size: 12px;">Total</div>
+                                <div class="attendance-stat-value">${att.total}</div>
+                            </div>
+                        </div>
+                        <div class="attendance-bar">
+                            <div class="attendance-bar-fill" style="width: ${attendancePercent}%"></div>
+                        </div>
+                        ${isCritical ? `<div class="attendance-warning">⚠️ Critical: Below 75% threshold</div>` : ''}
+                        <div class="attendance-actions">
+                            <button class="btn btn-sm" onclick="openUpdateModal('${att.subject}', ${att.total}, ${att.present})">✏️ Update</button>
+                        </div>
                     </div>
-                    <div style="font-size: 13px; color: var(--text-secondary);">
-                        Present: ${att.present} | Absent: ${att.absent} | Total: ${att.total}
-                    </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
+
+            updateStats();
+        }
+
+        function updateStats() {
+            const overall = Math.round(filteredAttendance.reduce((sum, att) => sum + (att.present / att.total), 0) / filteredAttendance.length * 100);
+            const critical = filteredAttendance.filter(att => (att.present / att.total) < 0.75).length;
+
+            document.getElementById('overallAttendance').textContent = overall + '%';
+            document.getElementById('criticalCount').textContent = critical;
+        }
+
+        function openUpdateModal(subject, total, present) {
+            editingSubject = subject;
+            document.getElementById('updateSubject').value = subject;
+            document.getElementById('updateTotal').value = total;
+            document.getElementById('updatePresent').value = present;
+
+            document.getElementById('updatePresent').addEventListener('change', updateAbsent);
+            document.getElementById('updateTotal').addEventListener('change', updateAbsent);
+            updateAbsent();
+
+            ModalManager.openModal('updateModal');
+        }
+
+        function updateAbsent() {
+            const total = parseInt(document.getElementById('updateTotal').value) || 0;
+            const present = parseInt(document.getElementById('updatePresent').value) || 0;
+            document.getElementById('updateAbsent').value = Math.max(0, total - present);
+        }
+
+        function saveAttendance(event) {
+            event.preventDefault();
+            const total = parseInt(document.getElementById('updateTotal').value);
+            const present = parseInt(document.getElementById('updatePresent').value);
+            const absent = total - present;
+
+            const att = attendanceData.find(a => a.subject === editingSubject);
+            if (att) {
+                att.total = total;
+                att.present = present;
+                att.absent = absent;
+                att.percentage = Math.round((present / total) * 100);
+
+                filteredAttendance = [...attendanceData];
+                displayAttendance();
+                ModalManager.closeModal('updateModal');
+                showToast('Attendance updated successfully', 'success');
+            }
+        }
+
+        function filterAttendance() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            filteredAttendance = attendanceData.filter(att =>
+                att.subject.toLowerCase().includes(searchTerm)
+            );
+            displayAttendance();
+        }
+
+        function exportReport() {
+            let report = 'Subject,Total,Present,Absent,Percentage\n';
+            attendanceData.forEach(att => {
+                const percent = Math.round((att.present / att.total) * 100);
+                report += `${att.subject},${att.total},${att.present},${att.absent},${percent}%\n`;
+            });
+
+            const blob = new Blob([report], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `attendance-report-${new Date().toISOString().split('T')[0]}.csv`;
+            a.click();
+            showToast('Report exported successfully', 'success');
+        }
+
+        function closeModalOnBackdrop(event) {
+            if (event.target.id === 'updateModal') {
+                ModalManager.closeModal('updateModal');
+            }
         }
     </script>
 </body>

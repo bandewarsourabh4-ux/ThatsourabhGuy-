@@ -375,12 +375,13 @@
                 const index = studentsData.findIndex(s => s.id === editingStudentId);
                 if (index !== -1) {
                     studentsData[index] = studentData;
+                    showToast('Student updated successfully', 'success');
                 }
             } else {
                 studentsData.push(studentData);
+                showToast('Student added successfully', 'success');
             }
 
-            alert('Student saved successfully!');
             closeStudentModal();
             displayStudents(studentsData);
         }
@@ -389,7 +390,7 @@
             if (confirm('Are you sure you want to delete this student?')) {
                 studentsData = studentsData.filter(s => s.id !== id);
                 displayStudents(studentsData);
-                alert('Student deleted successfully!');
+                showToast('Student deleted successfully', 'success');
             }
         }
     </script>

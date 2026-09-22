@@ -5,6 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results Management - Admin</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .result-item {
+            padding: 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            background: var(--surface);
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .result-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 16px;
+        }
+
+        .result-field {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .result-label {
+            color: var(--text-secondary);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .result-value {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 16px;
+        }
+
+        .grade-badge {
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            min-width: 60px;
+        }
+
+        .grade-a {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .grade-b {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .grade-c {
+            background: #fed7aa;
+            color: #92400e;
+        }
+
+        .result-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 32px;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .modal-header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .form-input {
+            width: 100%;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .modal-footer {
+            display: flex;
+            gap: 12px;
+            margin-top: 28px;
+            justify-content: flex-end;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .search-bar input {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .result-item {
+                grid-template-columns: 1fr;
+            }
+
+            .result-actions {
+                justify-content: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="app-wrapper">
@@ -29,20 +214,215 @@
                 <div class="header-content"><h1>Results Management</h1><div class="header-actions"><button class="btn-theme" onclick="toggleTheme()">🌙</button></div></div>
             </header>
             <div class="content-area">
-                <div style="margin-bottom: 24px;"><button class="btn" onclick="alert('Add results modal')">➕ Add Results</button></div>
-                <div class="card"><div class="card-header"><h3>Student Results</h3></div><div class="card-body"><div id="resultsList"></div></div></div>
+                <div class="results-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalStudents">156</div>
+                        <div class="stat-label">Total Students</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="avgCGPA">7.8</div>
+                        <div class="stat-label">Avg CGPA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="gradeA">45</div>
+                        <div class="stat-label">Grade A</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="gradeB">78</div>
+                        <div class="stat-label">Grade B</div>
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" id="searchInput" class="form-input" placeholder="Search by subject..." onkeyup="filterResults()">
+                    <button class="btn" onclick="openResultModal()">➕ Add Result</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><h3>Subject-wise Results</h3></div>
+                    <div class="card-body">
+                        <div id="resultsList"></div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
 
+    <div id="resultModal" class="modal" onclick="closeResultModalOnBackdrop(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <span>Add/Edit Result</span>
+                <button class="modal-close" onclick="ModalManager.closeModal('resultModal')">&times;</button>
+            </div>
+            <form id="resultForm" onsubmit="saveResult(event)">
+                <div class="form-group">
+                    <label class="form-label">Subject</label>
+                    <select id="resultSubject" class="form-input" required>
+                        <option value="">Select Subject</option>
+                        <option value="Data Structures">Data Structures</option>
+                        <option value="Database Management">Database Management</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Internal Marks (out of 30)</label>
+                        <input type="number" id="internalMarks" class="form-input" min="0" max="30" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">External Marks (out of 70)</label>
+                        <input type="number" id="externalMarks" class="form-input" min="0" max="70" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Practical Marks (out of 100)</label>
+                        <input type="number" id="practicalMarks" class="form-input" min="0" max="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Total Marks</label>
+                        <input type="number" id="totalMarks" class="form-input" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Grade</label>
+                    <select id="resultGrade" class="form-input" required>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn secondary" onclick="ModalManager.closeModal('resultModal')">Cancel</button>
+                    <button type="submit" class="btn">Save Result</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="../js/app.js"></script>
     <script>
+        let resultsData = [];
+        let filteredResults = [];
+
         document.addEventListener('DOMContentLoaded', function() {
             if (!app.checkAuth() || !app.isAdmin()) window.location.href = '../index.html';
-            const data = SmartHubData.getResults();
-            const container = document.getElementById('resultsList');
-            container.innerHTML = data.map(r => `<div style="padding: 12px 0; border-bottom: 1px solid var(--border);"><div style="font-weight: 600;">${r.subject}</div><div style="font-size: 13px; color: var(--text-secondary);">Total: ${r.total} | Grade: ${r.grade} | GP: ${r.gradePoint}</div></div>`).join('');
+            resultsData = SmartHubData.getResults();
+            filteredResults = [...resultsData];
+            displayResults();
+
+            document.getElementById('internalMarks').addEventListener('change', calculateTotal);
+            document.getElementById('externalMarks').addEventListener('change', calculateTotal);
+            document.getElementById('practicalMarks').addEventListener('change', calculateTotal);
         });
+
+        function displayResults() {
+            const container = document.getElementById('resultsList');
+
+            if (filteredResults.length === 0) {
+                container.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-secondary);">No results found</div>';
+                return;
+            }
+
+            container.innerHTML = filteredResults.map(result => {
+                const gradeClass = result.grade.startsWith('A') ? 'grade-a' : result.grade.startsWith('B') ? 'grade-b' : 'grade-c';
+                return `
+                    <div class="result-item">
+                        <div class="result-info">
+                            <div class="result-field">
+                                <span class="result-label">Subject</span>
+                                <span class="result-value">${result.subject}</span>
+                            </div>
+                            <div class="result-field">
+                                <span class="result-label">Internal</span>
+                                <span class="result-value">${result.internal}</span>
+                            </div>
+                            <div class="result-field">
+                                <span class="result-label">External</span>
+                                <span class="result-value">${result.external}</span>
+                            </div>
+                            <div class="result-field">
+                                <span class="result-label">Practical</span>
+                                <span class="result-value">${result.practical}</span>
+                            </div>
+                            <div class="result-field">
+                                <span class="result-label">Total</span>
+                                <span class="result-value">${result.total}</span>
+                            </div>
+                            <div class="result-field">
+                                <span class="result-label">GP</span>
+                                <span class="result-value">${result.gradePoint}</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="grade-badge ${gradeClass}">${result.grade}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function filterResults() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            filteredResults = resultsData.filter(result =>
+                result.subject.toLowerCase().includes(searchTerm)
+            );
+            displayResults();
+        }
+
+        function openResultModal() {
+            document.getElementById('resultForm').reset();
+            ModalManager.openModal('resultModal');
+        }
+
+        function calculateTotal() {
+            const internal = parseInt(document.getElementById('internalMarks').value) || 0;
+            const external = parseInt(document.getElementById('externalMarks').value) || 0;
+            const practical = parseInt(document.getElementById('practicalMarks').value) || 0;
+            const total = internal + external + (practical > 100 ? 100 : practical);
+            document.getElementById('totalMarks').value = Math.min(total, 200);
+        }
+
+        function saveResult(event) {
+            event.preventDefault();
+            const subject = document.getElementById('resultSubject').value;
+            const grade = document.getElementById('resultGrade').value;
+
+            const existing = resultsData.find(r => r.subject === subject);
+            if (existing) {
+                existing.internal = parseInt(document.getElementById('internalMarks').value);
+                existing.external = parseInt(document.getElementById('externalMarks').value);
+                existing.practical = parseInt(document.getElementById('practicalMarks').value);
+                existing.total = parseInt(document.getElementById('totalMarks').value);
+                existing.grade = grade;
+                existing.gradePoint = grade.startsWith('A') ? 8.0 : grade.startsWith('B+') ? 7.5 : grade.startsWith('B') ? 7.0 : 6.0;
+                showToast('Result updated successfully', 'success');
+            } else {
+                resultsData.push({
+                    subject,
+                    internal: parseInt(document.getElementById('internalMarks').value),
+                    external: parseInt(document.getElementById('externalMarks').value),
+                    practical: parseInt(document.getElementById('practicalMarks').value),
+                    total: parseInt(document.getElementById('totalMarks').value),
+                    grade,
+                    gradePoint: grade.startsWith('A') ? 8.0 : grade.startsWith('B+') ? 7.5 : grade.startsWith('B') ? 7.0 : 6.0
+                });
+                showToast('Result added successfully', 'success');
+            }
+
+            filteredResults = [...resultsData];
+            displayResults();
+            ModalManager.closeModal('resultModal');
+        }
+
+        function closeResultModalOnBackdrop(event) {
+            if (event.target.id === 'resultModal') {
+                ModalManager.closeModal('resultModal');
+            }
+        }
     </script>
 </body>
 </html>

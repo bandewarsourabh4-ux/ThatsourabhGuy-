@@ -349,7 +349,7 @@
             studentData.dob = document.getElementById('editDOB').value;
             studentData.address = document.getElementById('editAddress').value;
 
-            alert('Profile updated successfully!');
+            showToast('Profile updated successfully!', 'success');
             toggleEditForm('personal');
             displayProfileInfo();
         }

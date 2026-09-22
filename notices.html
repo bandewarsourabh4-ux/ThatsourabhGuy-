@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices - SmartHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .notice-filters {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .notice-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .notice-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            border-left: 4px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .notice-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .notice-card.important {
+            border-left-color: var(--danger);
+            background: linear-gradient(90deg, rgba(220, 38, 38, 0.03), transparent);
+        }
+
+        .notice-card.high {
+            border-left-color: var(--warning);
+        }
+
+        .notice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .notice-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            flex: 1;
+        }
+
+        .notice-badges {
+            display: flex;
+            gap: 8px;
+        }
+
+        .badge {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .badge.academic {
+            background: #eff6ff;
+            color: #0c4a6e;
+        }
+
+        .badge.examination {
+            background: #fef2f2;
+            color: #7f1d1d;
+        }
+
+        .badge.events {
+            background: #f5f3ff;
+            color: #5b21b6;
+        }
+
+        .badge.placement {
+            background: #f0fdf4;
+            color: #166534;
+        }
+
+        .badge.general {
+            background: #f8fafc;
+            color: #334155;
+        }
+
+        .badge.high {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .notice-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .notice-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .notice-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--surface);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            .notice-header {
+                flex-direction: column;
+            }
+
+            .notice-badges {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">📚</div>
+                <h2>SmartHub</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <span class="icon">👤</span>
+                    <span>Profile</span>
+                </a>
+                <a href="attendance.html" class="nav-link">
+                    <span class="icon">✓</span>
+                    <span>Attendance</span>
+                </a>
+                <a href="assignments.html" class="nav-link">
+                    <span class="icon">📝</span>
+                    <span>Assignments</span>
+                </a>
+                <a href="study-material.html" class="nav-link">
+                    <span class="icon">📚</span>
+                    <span>Study Material</span>
+                </a>
+                <a href="results.html" class="nav-link">
+                    <span class="icon">📈</span>
+                    <span>Results</span>
+                </a>
+                <a href="timetable.html" class="nav-link">
+                    <span class="icon">📅</span>
+                    <span>Timetable</span>
+                </a>
+                <a href="notices.html" class="nav-link active">
+                    <span class="icon">📢</span>
+                    <span>Notices</span>
+                </a>
+                <a href="settings.html" class="nav-link">
+                    <span class="icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content">
+                    <h1>Notices & Announcements</h1>
+                    <div class="header-actions">
+                        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-area">
+                <!-- Filters -->
+                <div class="notice-filters">
+                    <button class="filter-btn active" onclick="filterNotices('all')">All</button>
+                    <button class="filter-btn" onclick="filterNotices('Academic')">Academic</button>
+                    <button class="filter-btn" onclick="filterNotices('Examination')">Examination</button>
+                    <button class="filter-btn" onclick="filterNotices('Events')">Events</button>
+                    <button class="filter-btn" onclick="filterNotices('Placement')">Placement</button>
+                </div>
+
+                <!-- Notices List -->
+                <div class="notice-list" id="noticesList"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        let noticesData = null;
+        let currentFilter = 'all';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!app.checkAuth()) return;
+            noticesData = SmartHubData.getNotices();
+            displayNotices('all');
+        });
+
+        function filterNotices(category) {
+            currentFilter = category;
+
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            displayNotices(category);
+        }
+
+        function displayNotices(category) {
+            let filtered = noticesData;
+
+            if (category !== 'all') {
+                filtered = noticesData.filter(n => n.category === category);
+            }
+
+            filtered = filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            const container = document.getElementById('noticesList');
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div style="font-size: 48px; margin-bottom: 12px;">📢</div>
+                        <h3>No notices found</h3>
+                        <p style="color: var(--text-secondary); margin-top: 8px;">
+                            No notices in this category yet
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = filtered.map(notice => {
+                const categoryClass = notice.category.toLowerCase().replace(/\s+/g, '');
+                const priorityClass = notice.priority === 'High' ? 'important' : (notice.priority === 'Medium' ? 'high' : '');
+
+                return `
+                    <div class="notice-card ${priorityClass}">
+                        <div class="notice-header">
+                            <div class="notice-title">${notice.title}</div>
+                            <div class="notice-badges">
+                                <span class="badge ${categoryClass}">${notice.category}</span>
+                                ${notice.priority === 'High' ? '<span class="badge high">🔴 High Priority</span>' : ''}
+                            </div>
+                        </div>
+
+                        <div class="notice-meta">
+                            <span>📅 ${formatDate(notice.date)}</span>
+                            <span>📂 ${notice.category}</span>
+                        </div>
+
+                        <div class="notice-description">
+                            ${notice.description}
+                        </div>
+
+                        <div class="notice-actions">
+                            <button class="btn btn-sm">Read More</button>
+                            <button class="btn btn-sm secondary">📌 Save</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+    </script>
+
+</body>
+</html>

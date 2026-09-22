@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - SmartHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .settings-container {
+            max-width: 600px;
+        }
+
+        .settings-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .settings-header {
+            padding: 16px 20px;
+            background: var(--surface-secondary);
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+        }
+
+        .settings-body {
+            padding: 20px;
+        }
+
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .setting-item:last-child {
+            border-bottom: none;
+        }
+
+        .setting-label {
+            flex: 1;
+        }
+
+        .setting-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .setting-description {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+            width: 50px;
+            height: 28px;
+            background: var(--border);
+            border-radius: 14px;
+            cursor: pointer;
+            position: relative;
+            transition: background 0.3s;
+        }
+
+        .toggle-switch.active {
+            background: var(--success);
+        }
+
+        .toggle-slider {
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            left: 2px;
+            transition: left 0.3s;
+        }
+
+        .toggle-switch.active .toggle-slider {
+            left: 24px;
+        }
+
+        .password-form {
+            display: grid;
+            gap: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .form-group input {
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--surface-secondary);
+            color: var(--text-primary);
+            font-family: inherit;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-light);
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .danger-zone {
+            background: rgba(220, 38, 38, 0.05);
+            border: 1px solid #fee2e2;
+            padding: 16px;
+            border-radius: var(--radius);
+            margin-top: 16px;
+        }
+
+        .danger-zone h4 {
+            color: var(--danger);
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .setting-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .toggle-switch {
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">📚</div>
+                <h2>SmartHub</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <span class="icon">👤</span>
+                    <span>Profile</span>
+                </a>
+                <a href="attendance.html" class="nav-link">
+                    <span class="icon">✓</span>
+                    <span>Attendance</span>
+                </a>
+                <a href="assignments.html" class="nav-link">
+                    <span class="icon">📝</span>
+                    <span>Assignments</span>
+                </a>
+                <a href="study-material.html" class="nav-link">
+                    <span class="icon">📚</span>
+                    <span>Study Material</span>
+                </a>
+                <a href="results.html" class="nav-link">
+                    <span class="icon">📈</span>
+                    <span>Results</span>
+                </a>
+                <a href="timetable.html" class="nav-link">
+                    <span class="icon">📅</span>
+                    <span>Timetable</span>
+                </a>
+                <a href="notices.html" class="nav-link">
+                    <span class="icon">📢</span>
+                    <span>Notices</span>
+                </a>
+                <a href="settings.html" class="nav-link active">
+                    <span class="icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content">
+                    <h1>Settings</h1>
+                    <div class="header-actions">
+                        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-area">
+                <div class="settings-container">
+                    <!-- Notification Settings -->
+                    <div class="settings-section">
+                        <div class="settings-header">🔔 Notifications</div>
+                        <div class="settings-body">
+                            <div class="setting-item">
+                                <div class="setting-label">
+                                    <div class="setting-title">Assignment Notifications</div>
+                                    <div class="setting-description">Get notified about new assignments</div>
+                                </div>
+                                <div class="toggle-switch active" onclick="toggleSetting(this)">
+                                    <div class="toggle-slider"></div>
+                                </div>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-label">
+                                    <div class="setting-title">Attendance Alerts</div>
+                                    <div class="setting-description">Alerts when attendance drops below 80%</div>
+                                </div>
+                                <div class="toggle-switch active" onclick="toggleSetting(this)">
+                                    <div class="toggle-slider"></div>
+                                </div>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-label">
+                                    <div class="setting-title">Notice Updates</div>
+                                    <div class="setting-description">Get notified about new notices</div>
+                                </div>
+                                <div class="toggle-switch active" onclick="toggleSetting(this)">
+                                    <div class="toggle-slider"></div>
+                                </div>
+                            </div>
+
+                            <div class="setting-item">
+                                <div class="setting-label">
+                                    <div class="setting-title">Result Announcements</div>
+                                    <div class="setting-description">Notify when results are published</div>
+                                </div>
+                                <div class="toggle-switch active" onclick="toggleSetting(this)">
+                                    <div class="toggle-slider"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Privacy Settings -->
+                    <div class="settings-section">
+                        <div class="settings-header">🔒 Privacy & Security</div>
+                        <div class="settings-body">
+                            <div class="setting-item">
+                                <div class="setting-label">
+                                    <div class="setting-title">Change Password</div>
+                                    <div class="setting-description">Update your account password</div>
+                                </div>
+                                <button class="btn btn-sm" onclick="showPasswordForm()">Change</button>
+                            </div>
+
+                            <div id="passwordForm" style="display: none; margin-top: 16px;">
+                                <form class="password-form" onsubmit="changePassword(event)">
+                                    <div class="form-group">
+                                        <label>Current Password</label>
+                                        <input type="password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>New Password</label>
+                                        <input type="password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Confirm Password</label>
+                                        <input type="password" required>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn">Save Password</button>
+                                        <button type="button" class="btn secondary" onclick="hidePasswordForm()">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Appearance Settings -->
+                    <div class="settings-section">
+                        <div class="settings-header">🎨 Appearance</div>
+                        <div class="settings-body">
+                            <div class="setting-item">
+                                <div class="setting-label">
+                                    <div class="setting-title">Dark Mode</div>
+                                    <div class="setting-description">Use dark theme for the application</div>
+                                </div>
+                                <div class="toggle-switch" id="darkModeToggle" onclick="toggleTheme()">
+                                    <div class="toggle-slider"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account Settings -->
+                    <div class="settings-section">
+                        <div class="settings-header">👤 Account</div>
+                        <div class="settings-body">
+                            <div class="setting-item">
+                                <div class="setting-label">
+                                    <div class="setting-title">Logout</div>
+                                    <div class="setting-description">Sign out from your account</div>
+                                </div>
+                                <button class="btn btn-sm secondary" onclick="logout()">Logout</button>
+                            </div>
+
+                            <div class="danger-zone">
+                                <h4>Delete Account</h4>
+                                <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;">
+                                    Permanently delete your account and all associated data. This action cannot be undone.
+                                </p>
+                                <button class="btn btn-sm danger" onclick="deleteAccount()">Delete Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!app.checkAuth()) return;
+            updateDarkModeToggle();
+        });
+
+        function toggleSetting(element) {
+            element.classList.toggle('active');
+        }
+
+        function updateDarkModeToggle() {
+            const toggle = document.getElementById('darkModeToggle');
+            const theme = document.documentElement.getAttribute('data-theme');
+            if (theme === 'dark') {
+                toggle.classList.add('active');
+            } else {
+                toggle.classList.remove('active');
+            }
+        }
+
+        function showPasswordForm() {
+            document.getElementById('passwordForm').style.display = 'block';
+        }
+
+        function hidePasswordForm() {
+            document.getElementById('passwordForm').style.display = 'none';
+        }
+
+        function changePassword(event) {
+            event.preventDefault();
+            alert('Password changed successfully!');
+            hidePasswordForm();
+        }
+
+        function deleteAccount() {
+            if (confirm('Are you sure? This action cannot be undone. Type "DELETE" to confirm.')) {
+                const input = prompt('Type "DELETE" to confirm account deletion:');
+                if (input === 'DELETE') {
+                    alert('Account deleted successfully.');
+                    logout();
+                } else {
+                    alert('Account deletion cancelled.');
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

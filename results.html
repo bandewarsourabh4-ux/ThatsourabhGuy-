@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - SmartHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .results-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .summary-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .summary-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .summary-label {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .results-table {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        table th {
+            background: var(--surface-secondary);
+            padding: 14px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border);
+        }
+
+        table td {
+            padding: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        table tr:hover {
+            background: var(--surface-secondary);
+        }
+
+        table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .grade-badge {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: white;
+        }
+
+        .grade-badge.a {
+            background: #16a34a;
+        }
+
+        .grade-badge.b {
+            background: #2563eb;
+        }
+
+        .grade-badge.c {
+            background: #ea580c;
+        }
+
+        .performance-chart {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-top: 24px;
+        }
+
+        .chart-placeholder {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--surface-secondary);
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .results-summary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            table th, table td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">📚</div>
+                <h2>SmartHub</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <span class="icon">👤</span>
+                    <span>Profile</span>
+                </a>
+                <a href="attendance.html" class="nav-link">
+                    <span class="icon">✓</span>
+                    <span>Attendance</span>
+                </a>
+                <a href="assignments.html" class="nav-link">
+                    <span class="icon">📝</span>
+                    <span>Assignments</span>
+                </a>
+                <a href="study-material.html" class="nav-link">
+                    <span class="icon">📚</span>
+                    <span>Study Material</span>
+                </a>
+                <a href="results.html" class="nav-link active">
+                    <span class="icon">📈</span>
+                    <span>Results</span>
+                </a>
+                <a href="timetable.html" class="nav-link">
+                    <span class="icon">📅</span>
+                    <span>Timetable</span>
+                </a>
+                <a href="notices.html" class="nav-link">
+                    <span class="icon">📢</span>
+                    <span>Notices</span>
+                </a>
+                <a href="settings.html" class="nav-link">
+                    <span class="icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content">
+                    <h1>Results & Marks</h1>
+                    <div class="header-actions">
+                        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-area">
+                <!-- Summary -->
+                <div class="results-summary">
+                    <div class="summary-card">
+                        <div class="summary-value" id="overallSGPA">7.8</div>
+                        <div class="summary-label">Overall SGPA</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-value" id="overallCGPA">7.8</div>
+                        <div class="summary-label">CGPA</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-value" id="avgMarks">82</div>
+                        <div class="summary-label">Average Marks</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-value" id="totalSubjects">4</div>
+                        <div class="summary-label">Subjects</div>
+                    </div>
+                </div>
+
+                <!-- Results Table -->
+                <div class="results-table">
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Internal</th>
+                                    <th>External</th>
+                                    <th>Practical</th>
+                                    <th>Total</th>
+                                    <th>Grade</th>
+                                    <th>Grade Point</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultsTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Performance Chart -->
+                <div class="performance-chart">
+                    <h3>Subject Performance</h3>
+                    <div class="chart-placeholder">
+                        <canvas id="performanceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script>
+        let resultsData = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!app.checkAuth()) return;
+            resultsData = SmartHubData.getResults();
+            displayResults();
+            initPerformanceChart();
+        });
+
+        function displayResults() {
+            const tbody = document.getElementById('resultsTableBody');
+            let totalMarks = 0;
+
+            tbody.innerHTML = resultsData.map(result => {
+                totalMarks += result.total;
+                const gradeClass = result.grade.startsWith('A') ? 'a' : (result.grade.startsWith('B') ? 'b' : 'c');
+
+                return `
+                    <tr>
+                        <td><strong>${result.subject}</strong></td>
+                        <td>${result.internal}</td>
+                        <td>${result.external}</td>
+                        <td>${result.practical}</td>
+                        <td><strong>${result.total}</strong></td>
+                        <td><span class="grade-badge ${gradeClass}">${result.grade}</span></td>
+                        <td>${result.gradePoint}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            const avgMarks = Math.round(totalMarks / resultsData.length);
+            document.getElementById('avgMarks').textContent = avgMarks;
+            document.getElementById('totalSubjects').textContent = resultsData.length;
+
+            const avgGP = (resultsData.reduce((sum, r) => sum + r.gradePoint, 0) / resultsData.length).toFixed(2);
+            document.getElementById('overallSGPA').textContent = avgGP;
+            document.getElementById('overallCGPA').textContent = avgGP;
+        }
+
+        function initPerformanceChart() {
+            const ctx = document.getElementById('performanceChart');
+            if (ctx && resultsData) {
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: resultsData.map(r => r.subject.substring(0, 12)),
+                        datasets: [{
+                            label: 'Marks',
+                            data: resultsData.map(r => r.total),
+                            backgroundColor: ['#2563eb', '#8b5cf6', '#ec4899', '#f97316'],
+                            borderColor: ['#1e40af', '#7c3aed', '#be185d', '#ea580c'],
+                            borderWidth: 1,
+                            borderRadius: 4
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: { display: false }
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>

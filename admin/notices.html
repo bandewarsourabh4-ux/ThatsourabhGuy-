@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices Management - Admin</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">📚</div>
+                <h2>SmartHub Admin</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link"><span class="icon">📊</span><span>Dashboard</span></a>
+                <a href="students.html" class="nav-link"><span class="icon">👥</span><span>Students</span></a>
+                <a href="attendance.html" class="nav-link"><span class="icon">✓</span><span>Attendance</span></a>
+                <a href="assignments.html" class="nav-link"><span class="icon">📝</span><span>Assignments</span></a>
+                <a href="study-material.html" class="nav-link"><span class="icon">📚</span><span>Study Material</span></a>
+                <a href="results.html" class="nav-link"><span class="icon">📈</span><span>Results</span></a>
+                <a href="timetable.html" class="nav-link"><span class="icon">📅</span><span>Timetable</span></a>
+                <a href="notices.html" class="nav-link active"><span class="icon">📢</span><span>Notices</span></a>
+                <a href="settings.html" class="nav-link"><span class="icon">⚙️</span><span>Settings</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-content">
+                    <h1>Notice Management</h1>
+                    <div class="header-actions">
+                        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+                    <button class="btn" onclick="openNoticeModal()">➕ Create Notice</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><h3>Published Notices</h3></div>
+                    <div class="card-body">
+                        <div id="noticesList"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        let noticesData = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!app.checkAuth() || !app.isAdmin()) window.location.href = '../index.html';
+            noticesData = SmartHubData.getNotices();
+            displayNotices();
+        });
+
+        function displayNotices() {
+            const container = document.getElementById('noticesList');
+            container.innerHTML = noticesData.map(notice => `
+                <div style="padding: 12px 0; border-bottom: 1px solid var(--border);">
+                    <div style="font-weight: 600; margin-bottom: 4px;">${notice.title}</div>
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 8px;">
+                        ${notice.category} • ${formatDate(notice.date)} • ${notice.priority}
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="btn btn-sm" onclick="editNotice('${notice.id}')">Edit</button>
+                        <button class="btn btn-sm danger" onclick="deleteNotice('${notice.id}')">Delete</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function openNoticeModal() {
+            alert('Notice creation modal would open here');
+        }
+
+        function editNotice(id) {
+            alert('Editing notice: ' + id);
+        }
+
+        function deleteNotice(id) {
+            if (confirm('Delete this notice?')) {
+                noticesData = noticesData.filter(n => n.id !== id);
+                displayNotices();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - SmartHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .attendance-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .attendance-stat {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .attendance-stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .attendance-stat-label {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .attendance-warning {
+            background: #fef3c7;
+            border-left: 4px solid var(--warning);
+            padding: 16px;
+            border-radius: var(--radius);
+            margin-bottom: 24px;
+            color: #92400e;
+        }
+
+        .subject-attendance {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .subject-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .subject-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .subject-percentage {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .subject-percentage.good {
+            color: var(--success);
+        }
+
+        .subject-percentage.warning {
+            color: var(--warning);
+        }
+
+        .subject-percentage.danger {
+            color: var(--danger);
+        }
+
+        .subject-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        .detail-item {
+            text-align: center;
+        }
+
+        .detail-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .detail-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .progress {
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 12px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--success);
+            transition: width 0.3s;
+        }
+
+        .progress-bar.warning {
+            background: var(--warning);
+        }
+
+        .progress-bar.danger {
+            background: var(--danger);
+        }
+
+        @media (max-width: 768px) {
+            .subject-details {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">📚</div>
+                <h2>SmartHub</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <span class="icon">👤</span>
+                    <span>Profile</span>
+                </a>
+                <a href="attendance.html" class="nav-link active">
+                    <span class="icon">✓</span>
+                    <span>Attendance</span>
+                </a>
+                <a href="assignments.html" class="nav-link">
+                    <span class="icon">📝</span>
+                    <span>Assignments</span>
+                </a>
+                <a href="study-material.html" class="nav-link">
+                    <span class="icon">📚</span>
+                    <span>Study Material</span>
+                </a>
+                <a href="results.html" class="nav-link">
+                    <span class="icon">📈</span>
+                    <span>Results</span>
+                </a>
+                <a href="timetable.html" class="nav-link">
+                    <span class="icon">📅</span>
+                    <span>Timetable</span>
+                </a>
+                <a href="notices.html" class="nav-link">
+                    <span class="icon">📢</span>
+                    <span>Notices</span>
+                </a>
+                <a href="settings.html" class="nav-link">
+                    <span class="icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content">
+                    <h1>Attendance</h1>
+                    <div class="header-actions">
+                        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-area">
+                <!-- Overall Attendance Stats -->
+                <div class="attendance-stats">
+                    <div class="attendance-stat">
+                        <div class="attendance-stat-value" id="overallPercentage">92%</div>
+                        <div class="attendance-stat-label">Overall Attendance</div>
+                    </div>
+                    <div class="attendance-stat">
+                        <div class="attendance-stat-value" id="totalPresent">0</div>
+                        <div class="attendance-stat-label">Total Present</div>
+                    </div>
+                    <div class="attendance-stat">
+                        <div class="attendance-stat-value" id="totalAbsent">0</div>
+                        <div class="attendance-stat-label">Total Absent</div>
+                    </div>
+                    <div class="attendance-stat">
+                        <div class="attendance-stat-value" id="totalClasses">0</div>
+                        <div class="attendance-stat-label">Total Classes</div>
+                    </div>
+                </div>
+
+                <!-- Warning Alert -->
+                <div id="attendanceAlert"></div>
+
+                <!-- Subject-wise Attendance -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Subject-wise Attendance</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="attendanceList"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        let attendanceData = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!app.checkAuth()) return;
+            attendanceData = SmartHubData.getAttendance();
+            displayAttendance();
+        });
+
+        function displayAttendance() {
+            // Calculate overall stats
+            let totalPresent = 0, totalAbsent = 0, totalClasses = 0;
+            attendanceData.forEach(att => {
+                totalPresent += att.present;
+                totalAbsent += att.absent;
+                totalClasses += att.total;
+            });
+
+            const overallPercentage = Math.round((totalPresent / totalClasses) * 100);
+
+            document.getElementById('overallPercentage').textContent = overallPercentage + '%';
+            document.getElementById('totalPresent').textContent = totalPresent;
+            document.getElementById('totalAbsent').textContent = totalAbsent;
+            document.getElementById('totalClasses').textContent = totalClasses;
+
+            // Show warning if attendance is low
+            const alertDiv = document.getElementById('attendanceAlert');
+            if (overallPercentage < 75) {
+                alertDiv.innerHTML = `
+                    <div class="alert" style="background: #fee2e2; color: #991b1b; border-left: 4px solid #dc2626;">
+                        ⚠️ Your attendance is below 75%. Please meet your faculty immediately.
+                    </div>
+                `;
+            } else if (overallPercentage < 80) {
+                alertDiv.innerHTML = `
+                    <div class="alert" style="background: #fef3c7; color: #92400e; border-left: 4px solid #ea580c;">
+                        ⚠️ Your attendance is critical. Ensure regular attendance to avoid debarment.
+                    </div>
+                `;
+            }
+
+            // Display subject-wise attendance
+            const listDiv = document.getElementById('attendanceList');
+            listDiv.innerHTML = attendanceData.map(att => {
+                const percentage = att.percentage;
+                let percentageClass = 'good';
+                if (percentage < 75) percentageClass = 'danger';
+                else if (percentage < 80) percentageClass = 'warning';
+
+                return `
+                    <div class="subject-attendance">
+                        <div class="subject-header">
+                            <div class="subject-name">${att.subject}</div>
+                            <div class="subject-percentage ${percentageClass}">${percentage}%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar ${percentageClass}" style="width: ${percentage}%"></div>
+                        </div>
+                        <div class="subject-details">
+                            <div class="detail-item">
+                                <div class="detail-value">${att.total}</div>
+                                <div class="detail-label">Total Classes</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value" style="color: var(--success);">${att.present}</div>
+                                <div class="detail-label">Present</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value" style="color: var(--danger);">${att.absent}</div>
+                                <div class="detail-label">Absent</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-value">${att.total - att.present}</div>
+                                <div class="detail-label">Can Miss</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+    </script>
+
+</body>
+</html>

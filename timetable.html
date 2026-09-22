@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable - SmartHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .timetable-container {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .timetable th {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            padding: 16px 12px;
+            text-align: center;
+            font-weight: 600;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .timetable td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+        }
+
+        .timetable td:last-child {
+            border-right: none;
+        }
+
+        .timetable tr:last-child td {
+            border-bottom: none;
+        }
+
+        .day-header {
+            font-weight: 600;
+            text-align: left;
+            background: var(--surface-secondary);
+            padding: 14px 12px;
+            min-width: 100px;
+        }
+
+        .class-item {
+            padding: 12px 8px;
+            margin: 8px 0;
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        .class-time {
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .class-subject {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .class-faculty {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 2px;
+        }
+
+        .class-room {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .empty-slot {
+            color: var(--text-muted);
+            font-style: italic;
+            padding: 12px 8px;
+        }
+
+        .today-indicator {
+            background: linear-gradient(135deg, rgba(22, 163, 74, 0.1), rgba(22, 163, 74, 0.05));
+        }
+
+        .today-indicator th {
+            background: linear-gradient(135deg, #16a34a, #15803d);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .timetable {
+                font-size: 12px;
+            }
+
+            .timetable th, .timetable td {
+                padding: 10px 6px;
+            }
+
+            .day-header {
+                padding: 10px 6px;
+                min-width: 80px;
+            }
+
+            .class-item {
+                padding: 8px 6px;
+                margin: 4px 0;
+                font-size: 11px;
+            }
+
+            .class-time {
+                font-size: 11px;
+                margin-bottom: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">📚</div>
+                <h2>SmartHub</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <span class="icon">👤</span>
+                    <span>Profile</span>
+                </a>
+                <a href="attendance.html" class="nav-link">
+                    <span class="icon">✓</span>
+                    <span>Attendance</span>
+                </a>
+                <a href="assignments.html" class="nav-link">
+                    <span class="icon">📝</span>
+                    <span>Assignments</span>
+                </a>
+                <a href="study-material.html" class="nav-link">
+                    <span class="icon">📚</span>
+                    <span>Study Material</span>
+                </a>
+                <a href="results.html" class="nav-link">
+                    <span class="icon">📈</span>
+                    <span>Results</span>
+                </a>
+                <a href="timetable.html" class="nav-link active">
+                    <span class="icon">📅</span>
+                    <span>Timetable</span>
+                </a>
+                <a href="notices.html" class="nav-link">
+                    <span class="icon">📢</span>
+                    <span>Notices</span>
+                </a>
+                <a href="settings.html" class="nav-link">
+                    <span class="icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content">
+                    <h1>Weekly Timetable</h1>
+                    <div class="header-actions">
+                        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-area">
+                <div class="timetable-container">
+                    <table class="timetable">
+                        <thead>
+                            <tr>
+                                <th style="text-align: left;">Time</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <tbody id="timetableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        let timetableData = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!app.checkAuth()) return;
+            timetableData = SmartHubData.getTimetable();
+            displayTimetable();
+        });
+
+        function displayTimetable() {
+            const timeSlots = ['9:00 - 10:00', '10:15 - 11:15', '11:30 - 12:30', '12:00 - 1:00 PM', '2:00 - 3:00 PM', '3:15 - 4:15 PM'];
+            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const tbody = document.getElementById('timetableBody');
+            const today = getToday();
+
+            tbody.innerHTML = timeSlots.map(slot => {
+                return `
+                    <tr ${today === 'Monday' && slot === '9:00 - 10:00' ? 'class="today-indicator"' : ''}>
+                        <td class="day-header">${slot}</td>
+                        ${days.map(day => {
+                            const dayData = timetableData.find(t => t.day === day);
+                            const isToday = day === today;
+                            let content = '<div class="empty-slot">-</div>';
+
+                            if (dayData && dayData.classes.length > 0) {
+                                const classInSlot = dayData.classes.find(c => c.time === slot);
+                                if (classInSlot) {
+                                    content = `
+                                        <div class="class-item">
+                                            <div class="class-time">${classInSlot.time}</div>
+                                            <div class="class-subject">${classInSlot.subject}</div>
+                                            <div class="class-faculty">👨‍🏫 ${classInSlot.faculty}</div>
+                                            <div class="class-room">🚪 ${classInSlot.room}</div>
+                                        </div>
+                                    `;
+                                }
+                            }
+
+                            return `<td ${isToday && today !== 'Sunday' && today !== 'Saturday' ? 'style="background: rgba(22, 163, 74, 0.05);"' : ''}>${content}</td>`;
+                        }).join('')}
+                    </tr>
+                `;
+            }).join('');
+        }
+    </script>
+
+</body>
+</html>

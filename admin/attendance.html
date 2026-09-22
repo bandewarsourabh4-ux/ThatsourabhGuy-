@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management - Admin</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header"><div class="logo">📚</div><h2>SmartHub Admin</h2></div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link"><span class="icon">📊</span><span>Dashboard</span></a>
+                <a href="students.html" class="nav-link"><span class="icon">👥</span><span>Students</span></a>
+                <a href="attendance.html" class="nav-link active"><span class="icon">✓</span><span>Attendance</span></a>
+                <a href="assignments.html" class="nav-link"><span class="icon">📝</span><span>Assignments</span></a>
+                <a href="study-material.html" class="nav-link"><span class="icon">📚</span><span>Study Material</span></a>
+                <a href="results.html" class="nav-link"><span class="icon">📈</span><span>Results</span></a>
+                <a href="timetable.html" class="nav-link"><span class="icon">📅</span><span>Timetable</span></a>
+                <a href="notices.html" class="nav-link"><span class="icon">📢</span><span>Notices</span></a>
+                <a href="settings.html" class="nav-link"><span class="icon">⚙️</span><span>Settings</span></a>
+            </nav>
+            <div class="sidebar-footer"><button class="btn-logout" onclick="logout()">Logout</button></div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-content">
+                    <h1>Attendance Management</h1>
+                    <div class="header-actions"><button class="btn-theme" onclick="toggleTheme()">🌙</button></div>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
+                    <div class="card" style="padding: 16px; text-align: center;">
+                        <div style="font-size: 28px; font-weight: 700; color: var(--primary);">88%</div>
+                        <div style="color: var(--text-secondary); font-size: 14px;">Overall Attendance</div>
+                    </div>
+                    <div class="card" style="padding: 16px; text-align: center;">
+                        <div style="font-size: 28px; font-weight: 700; color: var(--primary);">156</div>
+                        <div style="color: var(--text-secondary); font-size: 14px;">Total Students</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><h3>Subject-wise Attendance</h3></div>
+                    <div class="card-body">
+                        <div id="attendanceList"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!app.checkAuth() || !app.isAdmin()) window.location.href = '../index.html';
+            displayAttendance();
+        });
+
+        function displayAttendance() {
+            const data = SmartHubData.getAttendance();
+            const container = document.getElementById('attendanceList');
+            container.innerHTML = data.map(att => `
+                <div style="padding: 12px 0; border-bottom: 1px solid var(--border);">
+                    <div style="font-weight: 600; margin-bottom: 8px;">
+                        ${att.subject} - ${att.percentage}%
+                    </div>
+                    <div style="font-size: 13px; color: var(--text-secondary);">
+                        Present: ${att.present} | Absent: ${att.absent} | Total: ${att.total}
+                    </div>
+                </div>
+            `).join('');
+        }
+    </script>
+</body>
+</html>

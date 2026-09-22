@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material - SmartHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .search-filters {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+            margin-bottom: 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .search-filters input,
+        .search-filters select {
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--surface-secondary);
+        }
+
+        .material-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .material-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .material-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .material-icon {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+        }
+
+        .material-card.notes .material-icon {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+        }
+
+        .material-card.practical .material-icon {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        }
+
+        .material-card.pyq .material-icon {
+            background: linear-gradient(135deg, #ec4899, #db2777);
+        }
+
+        .material-card.ebook .material-icon {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+        }
+
+        .material-content {
+            padding: 16px;
+        }
+
+        .material-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .material-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .material-subject {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .material-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .material-actions button {
+            flex: 1;
+            padding: 8px;
+            font-size: 12px;
+        }
+
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--surface);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            .search-filters {
+                grid-template-columns: 1fr;
+            }
+
+            .material-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">📚</div>
+                <h2>SmartHub</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <span class="icon">👤</span>
+                    <span>Profile</span>
+                </a>
+                <a href="attendance.html" class="nav-link">
+                    <span class="icon">✓</span>
+                    <span>Attendance</span>
+                </a>
+                <a href="assignments.html" class="nav-link">
+                    <span class="icon">📝</span>
+                    <span>Assignments</span>
+                </a>
+                <a href="study-material.html" class="nav-link active">
+                    <span class="icon">📚</span>
+                    <span>Study Material</span>
+                </a>
+                <a href="results.html" class="nav-link">
+                    <span class="icon">📈</span>
+                    <span>Results</span>
+                </a>
+                <a href="timetable.html" class="nav-link">
+                    <span class="icon">📅</span>
+                    <span>Timetable</span>
+                </a>
+                <a href="notices.html" class="nav-link">
+                    <span class="icon">📢</span>
+                    <span>Notices</span>
+                </a>
+                <a href="settings.html" class="nav-link">
+                    <span class="icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content">
+                    <h1>Study Material</h1>
+                    <div class="header-actions">
+                        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-area">
+                <!-- Search & Filters -->
+                <div class="search-filters">
+                    <input type="text" id="searchInput" placeholder="Search study material..." onkeyup="filterMaterial()">
+                    <select id="categoryFilter" onchange="filterMaterial()">
+                        <option value="">All Categories</option>
+                        <option value="Notes">Notes</option>
+                        <option value="PDFs">PDFs</option>
+                        <option value="Previous Year Papers">Previous Year Papers</option>
+                        <option value="E-books">E-books</option>
+                        <option value="Practical Files">Practical Files</option>
+                        <option value="Important Questions">Important Questions</option>
+                    </select>
+                    <select id="subjectFilter" onchange="filterMaterial()">
+                        <option value="">All Subjects</option>
+                        <option value="Data Structures">Data Structures</option>
+                        <option value="Database Management">Database Management</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                        <option value="System Design">System Design</option>
+                    </select>
+                </div>
+
+                <!-- Material Grid -->
+                <div class="material-grid" id="materialGrid"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        let materialData = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!app.checkAuth()) return;
+            materialData = SmartHubData.getStudyMaterial();
+            displayMaterial(materialData);
+        });
+
+        function filterMaterial() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const category = document.getElementById('categoryFilter').value;
+            const subject = document.getElementById('subjectFilter').value;
+
+            let filtered = materialData.filter(m => {
+                return (m.title.toLowerCase().includes(search) || m.subject.toLowerCase().includes(search)) &&
+                       (!category || m.category === category) &&
+                       (!subject || m.subject === subject);
+            });
+
+            displayMaterial(filtered);
+        }
+
+        function displayMaterial(data) {
+            const grid = document.getElementById('materialGrid');
+
+            if (data.length === 0) {
+                grid.innerHTML = `
+                    <div class="empty-state">
+                        <div style="font-size: 48px; margin-bottom: 12px;">📚</div>
+                        <h3>No materials found</h3>
+                        <p style="color: var(--text-secondary); margin-top: 8px;">Try adjusting your filters</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = data.map(material => {
+                const categoryClass = material.category.toLowerCase().replace(/\s+/g, '');
+                const categoryEmoji = {
+                    'Notes': '📝',
+                    'PDFs': '📄',
+                    'Previous Year Papers': '📋',
+                    'E-books': '📖',
+                    'Practical Files': '💾',
+                    'Important Questions': '❓'
+                };
+
+                return `
+                    <div class="material-card ${categoryClass}">
+                        <div class="material-icon">${categoryEmoji[material.category] || '📚'}</div>
+                        <div class="material-content">
+                            <div class="material-title">${material.title}</div>
+                            <div class="material-meta">
+                                <span class="material-subject">${material.subject}</span>
+                                <span>${material.size}</span>
+                            </div>
+                            <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 12px;">
+                                <div>📤 ${material.uploadedBy}</div>
+                                <div>📅 ${formatDate(material.date)}</div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn btn-sm">📥 Download</button>
+                                <button class="btn btn-sm secondary">👁️ Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+    </script>
+
+</body>
+</html>

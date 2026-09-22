@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - SmartHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">📚</div>
+                <h2>SmartHub</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link active" data-page="dashboard">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="profile.html" class="nav-link" data-page="profile">
+                    <span class="icon">👤</span>
+                    <span>Profile</span>
+                </a>
+                <a href="attendance.html" class="nav-link" data-page="attendance">
+                    <span class="icon">✓</span>
+                    <span>Attendance</span>
+                </a>
+                <a href="assignments.html" class="nav-link" data-page="assignments">
+                    <span class="icon">📝</span>
+                    <span>Assignments</span>
+                </a>
+                <a href="study-material.html" class="nav-link" data-page="study">
+                    <span class="icon">📚</span>
+                    <span>Study Material</span>
+                </a>
+                <a href="results.html" class="nav-link" data-page="results">
+                    <span class="icon">📈</span>
+                    <span>Results</span>
+                </a>
+                <a href="timetable.html" class="nav-link" data-page="timetable">
+                    <span class="icon">📅</span>
+                    <span>Timetable</span>
+                </a>
+                <a href="notices.html" class="nav-link" data-page="notices">
+                    <span class="icon">📢</span>
+                    <span>Notices</span>
+                </a>
+                <a href="settings.html" class="nav-link" data-page="settings">
+                    <span class="icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content">
+                    <h1>Dashboard</h1>
+                    <div class="header-actions">
+                        <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+                        <div class="user-profile">
+                            <span id="userName">Student</span>
+                            <button class="btn-menu" onclick="toggleProfileMenu()">⋯</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="content-area">
+                <!-- Welcome Section -->
+                <div class="welcome-section">
+                    <div class="welcome-text">
+                        <h2>Welcome back, <span id="studentName">Student</span>! 👋</h2>
+                        <p>Here's your academic overview for this semester</p>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #e0f2fe;">📚</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="attendancePercentage">92%</div>
+                            <div class="stat-label">Attendance</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #fef2f2;">📝</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="assignmentCount">8/12</div>
+                            <div class="stat-label">Assignments</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #f0fdf4;">📈</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="avgGPA">7.8/10</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #fef3c7;">⏰</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="upcomingCount">3</div>
+                            <div class="stat-label">Classes Today</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="charts-section">
+                    <div class="chart-container">
+                        <h3>Attendance Overview</h3>
+                        <div class="chart-placeholder">
+                            <canvas id="attendanceChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <h3>Assignment Status</h3>
+                        <div class="chart-placeholder">
+                            <canvas id="assignmentChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Cards Section -->
+                <div class="cards-section">
+                    <!-- Upcoming Assignments -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>📝 Upcoming Assignments</h3>
+                            <a href="assignments.html" class="link-more">View All →</a>
+                        </div>
+                        <div class="card-body">
+                            <div id="upcomingAssignments" class="assignments-list">
+                                <div class="empty-state">No upcoming assignments</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Today's Timetable -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>📅 Today's Classes</h3>
+                            <a href="timetable.html" class="link-more">View Timetable →</a>
+                        </div>
+                        <div class="card-body">
+                            <div id="todayClasses" class="classes-list">
+                                <div class="empty-state">No classes today</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Latest Notices -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>📢 Latest Notices</h3>
+                            <a href="notices.html" class="link-more">View All →</a>
+                        </div>
+                        <div class="card-body">
+                            <div id="latestNotices" class="notices-list">
+                                <div class="empty-state">No new notices</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/chart.min.js"></script>
+</body>
+</html>
